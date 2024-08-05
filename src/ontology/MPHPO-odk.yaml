@@ -1,0 +1,24 @@
+id: MPHPO
+title: Mortality Prediction for Hospitalized Patients Ontology
+github_org: OpenLHS
+repo: RIDDLE
+documentation:
+  documentation_system: mkdocs
+release_artefacts:
+  - full
+  - base
+primary_release: full
+export_formats:
+  - owl
+import_group:
+  products:
+    - id: HOSO
+      module_type: mirror
+      mirror_from: "https://raw.githubusercontent.com/OpenLHS/HOSO/main/HOSO-full.owl"
+components:
+  products:
+    - filename: MPHPO-Appli.owl
+subset_group:
+  products:
+    - id: MPHPO-Ontorel
+robot_java_args: "-Xmx8G"

@@ -1,0 +1,28 @@
+# PURL configuration for http://purl.obolibrary.org/obo/MPHPO
+
+idspace: MPHPO
+base_url: /obo/MPHPO
+
+products:
+- MPHPO.owl: https://raw.githubusercontent.com/OpenLHS/RIDDLE/main/MPHPO.owl
+- MPHPO.obo: https://raw.githubusercontent.com/OpenLHS/RIDDLE/main/MPHPO.obo
+
+term_browser: ontobee
+example_terms:
+- MPHPO_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/OpenLHS/RIDDLE/v
+
+- prefix: /tracker/
+  replacement: https://github.com/OpenLHS/RIDDLE/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/MPHPO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/OpenLHS/RIDDLE/main/
+
