@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/MPHPO/imports/HOSO_import.owl>
-<http://purl.obolibrary.org/obo/MPHPO/releases/2024-08-05/imports/HOSO_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/HOSO/releases/2024-08-02/HOSO-full.owl>)
-Annotation(owl:versionInfo "2024-08-05")
+<http://purl.obolibrary.org/obo/MPHPO/releases/2024-08-06/imports/HOSO_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/HOSO/releases/2024-08-06/HOSO-full.owl>)
+Annotation(owl:versionInfo "2024-08-06")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
@@ -360,6 +360,7 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000062>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000063>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000064>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000100>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0001900>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0002259>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0002575>))
@@ -494,6 +495,15 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OpenLHS-Core_0000
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000064> "Human-readable necessary and sufficient membership conditions of a class or a property."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OpenLHS-Core_0000064> "necessary and sufficient conditions"@en)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/OpenLHS-Core_0000100> (ontorel specification)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000100> "An annotation property used to tag relevant classes for ontorel generation"@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/OpenLHS-Core_0000100> "Three values for this annotation (WIP) :
+ - interest: means that the annotated class instances or associated data properties are of interest for a request.
+ - joint: means that the annotated clas or property is necessary for a jointure in the request.
+ - pivot: means that the annotated class is the pivot of the request."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OpenLHS-Core_0000100> "ontorel specification"@en)
 
 # Annotation Property: <http://purl.obolibrary.org/obo/RO_0002259> (<http://purl.obolibrary.org/obo/RO_0002259>)
 
@@ -2825,6 +2835,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000062> <http://purl.obolibrary.org/obo/HOSO_0000103> "A temporal information that is a component of a healthcare organization service delivery ending statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the ending of healthcare organization service delivery."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HOSO_0000103> "healthcare organization service delivery ending temporal information"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/HOSO_0000103> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000065>)
+SubClassOf(<http://purl.obolibrary.org/obo/HOSO_0000103> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000070> <http://purl.obolibrary.org/obo/HOSO_0000056>))
 
 # Class: <http://purl.obolibrary.org/obo/HOSO_0000120> (canadian healthcare facility postal code)
 
@@ -2854,11 +2865,11 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000062> <http:
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HOSO_0000123> "canadian healthcare organization forward sorting area code"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/HOSO_0000123> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000023>)
 
-# Class: <http://purl.obolibrary.org/obo/HOSO_0000124> (health organization clinical visit pathological condition impact statement)
+# Class: <http://purl.obolibrary.org/obo/HOSO_0000124> (healthcare organization clinical visit pathological condition impact statement)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/HOSO_0000124> "A pragmatically accepted statement that states the impact of a pathological condition on a clinical visit."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000062> <http://purl.obolibrary.org/obo/HOSO_0000124> "A pragmatically accepted statement that states the impact of a pathological condition on a clinical visit."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HOSO_0000124> "health organization clinical visit pathological condition impact statement"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HOSO_0000124> "healthcare organization clinical visit pathological condition impact statement"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/HOSO_0000124> <http://purl.obolibrary.org/obo/OpenLHS-Core_0000010>)
 SubClassOf(<http://purl.obolibrary.org/obo/HOSO_0000124> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002180> <http://purl.obolibrary.org/obo/HEPRO_0000017>))
 SubClassOf(<http://purl.obolibrary.org/obo/HOSO_0000124> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002180> <http://purl.obolibrary.org/obo/HOSO_0000100>))
@@ -3008,6 +3019,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000030> "information content entity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000030> <http://purl.obolibrary.org/obo/BFO_0000031>)
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/BFO_0000001>))
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000030> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000070> <http://purl.obolibrary.org/obo/HOSO_0000124>))
 
 # Class: <http://purl.obolibrary.org/obo/IAO_0000033> (directive information entity)
 

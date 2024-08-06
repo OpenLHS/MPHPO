@@ -1,0 +1,35 @@
+IRI,label,ontorel
+MPHPO-HOSO_0000032,emergency department visit,interest
+MPHPO-HOSO_0000009,healthcare provider,joint
+MPHPO-HOSO_0000084,healthcare physician service identifier,interest
+MPHPO-HOSO_0000012,healthcare organization clinical visit,joint
+MPHPO-HOSO_0000103,healthcare organization service delivery ending temporal information,interest
+MPHPO-HOSO_0000126,pathological condition impact type on clinical visit,interest
+MPHPO-HOSO_0000102,healthcare organization service delivery beginning temporal information,interest
+MPHPO-HOSO_0000137,human clinical visit specified patient,joint
+MPHPO-IOIO_0000011,human biological sex information content entity,interest
+MPHPO-HOSO_0000138,healthcare provider identifier,joint
+MPHPO-HOSO_0000076,hospitalization admission urgency level specification,interest
+MPHPO-HOSO_0000073,ICU admission specification,interest
+MPHPO-IOIO_0000023,living environment type,interest
+MPHPO-HOSO_0000080,living environment type prior to clinical visit statement,joint
+MPHPO-HOSO_0000072,ED by ambulance initiated hospitalization,interest
+MPHPO-IOIO_0000014,human identifier,joint
+MPHPO-HOSO_0000078,hospitalization admitting physician specification,joint
+MPHPO-HOSO_0000055,healthcare organization service delivery beginning statement,joint
+MPHPO-HOSO_0000079,healthcare physician service,joint
+MPHPO-HOSO_0000074,clinical visit agreement specification,joint
+MPHPO-IOIO_0000001,human birth statement,joint
+MPHPO-HOSO_0000031,hospitalization,interest
+MPHPO-HOSO_0000008,healthcare organization,joint
+MPHPO-HEPRO_0000017,pathological condition sub-group name,interest
+MPHPO-HOSO_0000011,healthcare organization service delivery,joint
+MPHPO-HOSO_0000100,healthcare organization service delivery identifier,joint
+MPHPO-IOIO_0000020,human birth date,interest
+MPHPO-IOIO_0000015,human biological sex statement,joint
+BFO_0000002,continuant,joint
+MPHPO-HOSO_0000003,healthcare service organism specification,joint
+MPHPO-HOSO_0000124,healthcare organization clinical visit pathological condition impact statement,joint
+MPHPO-HOSO_0000056,healthcare organization service delivery ending statement,joint
+BFO_0000003,occurrent,joint
+NCBITaxon_9606,Homo sapiens,pivot

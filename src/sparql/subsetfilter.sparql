@@ -1,0 +1,7 @@
+PREFIX ontorel: <http://purl.obolibrary.org/obo/MPHPO-OpenLHS-Core_0000100>
+
+SELECT ?term
+WHERE {
+  ?term ontorel: ?value .
+}
+
