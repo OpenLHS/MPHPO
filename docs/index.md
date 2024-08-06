@@ -6,6 +6,11 @@ Welcome to the MPHPO documentation!
 
 You can find descriptions of the standard ontology engineering workflows [here](odk-workflows/index.md).
 
+## Ontorel schema
+
+![Screenshot](img/MPHPO_Ontorel.png)
+
+
 ## Ontorel Classes 
 
 {{ read_csv('../ontorel/ontorel-classes-list.csv') }}
