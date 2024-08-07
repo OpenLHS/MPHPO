@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                685fff204f62937740b133a360f10ebfbe73e00482850c826e7320aaa7fa0f95
+CONFIG_HASH=                1c9af26e0392240fd9e99cfa31ca52db000c32f9b59cf2deb3a9a4243fb620cc
 
 
 # ----------------------------------------
@@ -44,8 +44,8 @@ REPORT_FAIL_ON =            None
 REPORT_LABEL =              -l true
 REPORT_PROFILE_OPTS =       
 OBO_FORMAT_OPTIONS =        
-SPARQL_VALIDATION_CHECKS =  owldef-self-reference iri-range label-with-iri multiple-replaced_by dc-properties 
-SPARQL_EXPORTS =            basic-report class-count-by-prefix edges xrefs obsoletes synonyms 
+SPARQL_VALIDATION_CHECKS =  owldef-self-reference iri-range label-with-iri multiple-replaced_by 
+SPARQL_EXPORTS =            base-classes-report base-properties-report 
 ODK_VERSION_MAKEFILE =      v1.5.1
 
 TODAY ?=                    $(shell date +%Y-%m-%d)
@@ -159,7 +159,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  HOSO
+IMPORTS =  HOSO Ontorel-Core
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -174,7 +174,7 @@ all_imports: $(IMPORT_FILES)
 # ----------------------------------------
 
 
-SUBSETS = 
+SUBSETS =  MPHPO-Ontorel
 
 SUBSET_ROOTS = $(patsubst %, $(SUBSETDIR)/%, $(SUBSETS))
 SUBSET_FILES = $(foreach n,$(SUBSET_ROOTS), $(foreach f,$(FORMATS_INCL_TSV), $(n).$(f)))
@@ -242,10 +242,10 @@ endif
 # ----------------------------------------
 
 $(REPORTDIR)/$(SRC)-obo-report.tsv: $(SRCMERGED) | $(REPORTDIR)
-	$(ROBOT) report -i $< $(REPORT_LABEL) $(REPORT_PROFILE_OPTS) --fail-on $(REPORT_FAIL_ON) --base-iri $(URIBASE)/MPHPO_ --base-iri $(URIBASE)/MPHPO --print 5 -o $@
+	$(ROBOT) report -i $< $(REPORT_LABEL) $(REPORT_PROFILE_OPTS) --fail-on $(REPORT_FAIL_ON) --print 5 -o $@
 
 $(REPORTDIR)/%-obo-report.tsv: % | $(REPORTDIR)
-	$(ROBOT) report -i $< $(REPORT_LABEL) $(REPORT_PROFILE_OPTS) --fail-on $(REPORT_FAIL_ON) --base-iri $(URIBASE)/MPHPO_ --base-iri $(URIBASE)/MPHPO --print 5 -o $@
+	$(ROBOT) report -i $< $(REPORT_LABEL) $(REPORT_PROFILE_OPTS) --fail-on $(REPORT_FAIL_ON) --print 5 -o $@
 
 check_for_robot_updates:
 	echo "You are not using a custom profile, so you are getting the joy of the latest ROBOT report!"
@@ -370,6 +370,12 @@ $(IMPORTDIR)/HOSO_import.owl: $(MIRRORDIR)/HOSO.owl $(IMPORTDIR)/HOSO_terms_comb
 	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< query --update ../sparql/preprocess-module.ru --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru  \
     $(ANNOTATE_CONVERT_FILE); fi
 
+## Module for ontology: Ontorel-Core
+
+$(IMPORTDIR)/Ontorel-Core_import.owl: $(MIRRORDIR)/Ontorel-Core.owl $(IMPORTDIR)/Ontorel-Core_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< query --update ../sparql/preprocess-module.ru --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru  \
+    $(ANNOTATE_CONVERT_FILE); fi
+
 
 .PHONY: refresh-imports
 refresh-imports:
@@ -406,7 +412,14 @@ ifeq ($(strip $(MIR)),true)
 .PHONY: mirror-HOSO
 .PRECIOUS: $(MIRRORDIR)/HOSO.owl
 mirror-HOSO: | $(TMPDIR)
-	$(ROBOT) convert -I https://raw.githubusercontent.com/OpenLHS/HOSO/main/HOSO-full.owl -o $(TMPDIR)/$@.owl
+	$(ROBOT) convert -I https://raw.githubusercontent.com/OpenLHS/HOSO/main/HOSO.owl -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: Ontorel-Core
+.PHONY: mirror-Ontorel-Core
+.PRECIOUS: $(MIRRORDIR)/Ontorel-Core.owl
+mirror-Ontorel-Core: | $(TMPDIR)
+	$(ROBOT) convert -I https://raw.githubusercontent.com/OpenLHS/Ontorel-Core/main/Ontorel-Core.owl -o $(TMPDIR)/$@.owl
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)
