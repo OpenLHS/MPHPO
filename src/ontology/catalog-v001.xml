@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-<group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
-
-  
-  
-  <uri name="http://purl.obolibrary.org/obo/MPHPO/imports/HOSO_import.owl" uri="imports/HOSO_import.owl"/>
-  
-  
-
-
-  
-  <uri name="http://purl.obolibrary.org/obo/MPHPO/components/MPHPO-Appli.owl" uri="components/MPHPO-Appli.owl"/>
-  
-
-</group>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/MPHPO/releases/2024-08-07/imports/Ontorel-Core_import.owl" uri="imports/Ontorel-Core_import.owl"/>
+    <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
+        <uri name="http://purl.obolibrary.org/obo/MPHPO/imports/HOSO_import.owl" uri="imports/HOSO_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/MPHPO/components/MPHPO-Appli.owl" uri="components/MPHPO-Appli.owl"/>
+    </group>
 </catalog>

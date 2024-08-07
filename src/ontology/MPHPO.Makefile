@@ -37,20 +37,19 @@ add_defs:
 
 update_defs: del_defs add_defs
 
-create_appli:
-	$(ROBOT) rename -i $(RELEASEDIR)/$(ONT)-full.owl --prefix-mappings appli-rename.tsv \
+#	$(ROBOT) rename -i $(RELEASEDIR)/$(ONT)-full.owl --prefix-mappings appli-rename.tsv \
 	relax --exclude-named-classes false \
 	remove --axioms equivalent \
 	annotate --ontology-iri "http://purl.obolibrary.org/obo/MPHPO/MPHPO-appli.owl" -o $(RELEASEDIR)/ontorel/$(ONT)-appli.owl
 
 create_ontorel_list:
-	$(ROBOT) query -i $(RELEASEDIR)/ontorel/$(ONT)-appli.owl --query $(SPARQLDIR)/subsetfilter.sparql $(RELEASEDIR)/ontorel/subset_seed.txt
+	$(ROBOT) query -i $(RELEASEDIR)/$(ONT).owl --query $(SPARQLDIR)/subsetfilter.sparql $(RELEASEDIR)/ontorel/subset_seed.txt
 
 
 create_ontorel_classes_list:
-	$(ROBOT) query -i $(RELEASEDIR)/ontorel/$(ONT)-appli.owl --query $(SPARQLDIR)/ontorel-classes-list.sparql $(RELEASEDIR)/ontorel/ontorel-classes-list.csv
+	$(ROBOT) query -i $(RELEASEDIR)/$(ONT).owl --query $(SPARQLDIR)/ontorel-classes-list.sparql $(RELEASEDIR)/ontorel/ontorel-classes-list.csv
 
 create_ontorel_subset:
-	$(ROBOT) extract -i $(RELEASEDIR)/ontorel/$(ONT)-appli.owl -T $(RELEASEDIR)/ontorel/subset_seed.txt --method subset --force true --copy-ontology-annotations true -o $(RELEASEDIR)/ontorel/$(ONT)-ontorel.owl
+	$(ROBOT) extract -i $(RELEASEDIR)/$(ONT).owl -T $(RELEASEDIR)/ontorel/subset_seed.txt --method subset --force true --intermediates minimal --copy-ontology-annotations true -o $(RELEASEDIR)/ontorel/$(ONT)_subset-ontorel.owl
 
 ontorel: create_ontorel_classes_list create_ontorel_list create_ontorel_subset
