@@ -1,33 +1,0 @@
-IRI,label,ontorel
-HOSO_0000072,ED by ambulance initiated hospitalization,interest
-IOIO_0000001,human birth statement,joint
-HOSO_0000138,healthcare provider identifier,joint
-MPHPO_0000006,MPHPO healthcare physician service identifier ,interest
-MPHPO_0000001,MPHPO pathological condition impact type on clinical visit ,interest
-HOSO_0000078,hospitalization admitting physician specification,joint
-HOSO_0000100,healthcare organization service delivery identifier,joint
-HOSO_0000003,healthcare service organism specification,joint
-HOSO_0000124,healthcare organization clinical visit pathological condition impact statement,joint
-MPHPO_0000002,MPHPO pathological condition sub-group name ,interest
-HOSO_0000009,healthcare provider,joint
-MPHPO_0000008,MPHPO ICU admission specification ,interest
-IOIO_0000015,human biological sex statement,joint
-HOSO_0000008,healthcare organization,joint
-MPHPO_0000007,MPHPO hospitalization admission urgency level specification ,interest
-IOIO_0000014,human identifier,joint
-MPHPO_0000004,MPHPO HCOS ending temporal information ,interest
-HOSO_0000012,healthcare organization clinical visit,joint
-HOSO_0000080,living environment type prior to clinical visit statement,joint
-HOSO_0000079,healthcare physician service,joint
-HOSO_0000031,hospitalization,interest
-HOSO_0000137,human clinical visit specified patient,joint
-MPHPO_0000010,MPHPO human biological sex information content entity,interest
-HOSO_0000056,healthcare organization service delivery ending statement,joint
-HOSO_0000011,healthcare organization service delivery,joint
-MPHPO_0000003,MPHPO HCOS beginning temporal information,interest
-HOSO_0000074,clinical visit agreement specification,joint
-HOSO_0000032,emergency department visit,interest
-HOSO_0000055,healthcare organization service delivery beginning statement,joint
-MPHPO_0000009,MPHPO human birth date,interest
-MPHPO_0000005,MPHPO living environment type ,interest
-NCBITaxon_9606,Homo sapiens,joint

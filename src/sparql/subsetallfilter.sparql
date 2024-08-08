@@ -1,0 +1,16 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT ?IRI
+WHERE {
+{
+  ?IRI a owl:Class .
+  }
+  UNION {
+  ?IRI a owl:ObjectProperty .
+  }
+  UNION {
+  ?IRI a owl:AnnotationProperty .
+  }
+  FILTER(isIRI(?IRI))
+}
+GROUP BY ?IRI
