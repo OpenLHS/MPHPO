@@ -25,4 +25,5 @@ robot_report:
   custom_sparql_exports:
     - base-classes-report
     - base-properties-report
+    - ontorel-classes-list-report
 robot_java_args: "-Xmx8G"

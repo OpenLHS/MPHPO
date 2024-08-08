@@ -13,4 +13,4 @@ You can find descriptions of the standard ontology engineering workflows [here](
 
 ## Ontorel Classes 
 
-{{ read_csv('../ontorel/ontorel-classes-list.csv') }}
+{{ read_csv('../src/ontology/reports/ontorel-classes-list-report.csv') }}
