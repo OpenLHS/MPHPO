@@ -47,18 +47,20 @@ create_ontorel_from_subset:
 	$(ROBOT) filter -i $(SUBSETDIR)/$(SUBSETS).owl -T $(RELEASEDIR)/ontorel/tempfolder/subset_class_seed.txt --select "self annotations" --trim false -o $(RELEASEDIR)/ontorel/tempfolder/$(ONT)_ontorel1p.owl
 	$(ROBOT) query -i $(RELEASEDIR)/ontorel/tempfolder/$(ONT)_ontorel1p.owl --query $(SPARQLDIR)/subsetallfilter.sparql $(RELEASEDIR)/ontorel/tempfolder/subset_all_seed.txt
 	$(ROBOT) filter -i $(SUBSETDIR)/$(SUBSETS).owl -T $(RELEASEDIR)/ontorel/tempfolder/subset_all_seed.txt --select "self annotations" --trim true -o $(RELEASEDIR)/ontorel/tempfolder/$(ONT)_ontorel2p.owl
-	$(ROBOT) merge -i $(RELEASEDIR)/ontorel/tempfolder/$(ONT)_ontorel1p.owl -i $(RELEASEDIR)/ontorel/tempfolder/$(ONT)_ontorel2p.owl -i $(IMPORTDIR)/Ontorel-Core_import.owl -o $(RELEASEDIR)/ontorel/$(ONT)_ontorel.owl
+	$(ROBOT) merge -i $(RELEASEDIR)/ontorel/tempfolder/$(ONT)_ontorel1p.owl -i $(RELEASEDIR)/ontorel/tempfolder/$(ONT)_ontorel2p.owl -i $(IMPORTDIR)/Ontorel-Core_import.owl -o $(RELEASEDIR)/ontorel/$(ONT)-ontorel-slim.owl
 
 
-create_ontorel_list:
+## obsolete
+
+#create_ontorel_list:
 	$(ROBOT) query -i $(RELEASEDIR)/$(ONT).owl --query $(SPARQLDIR)/subsetfilter.sparql $(RELEASEDIR)/ontorel/subset_seed.txt
 
-create_class_seed:
+#create_class_seed:
 	$(ROBOT) query -i $(RELEASEDIR)/$(ONT).owl --query $(SPARQLDIR)/subsetclassfilter.sparql $(RELEASEDIR)/ontorel/subset_class_seed.txt
 
 
 create_ontorel_classes_list:
-	$(ROBOT) query -i $(RELEASEDIR)/$(ONT).owl --query $(SPARQLDIR)/ontorel-classes-list.sparql $(RELEASEDIR)/ontorel/ontorel-classes-list.csv
+	$(ROBOT) query -i $(RELEASEDIR)/$(ONT).owl --query $(SPARQLDIR)/ontorel-classes-list.sparql ../src/ontology/reports/ontorel-classes-list.csv
 
 create_ontorel_subset:
 	$(ROBOT) extract -i $(RELEASEDIR)/$(ONT).owl -T $(RELEASEDIR)/ontorel/subset_seed.txt --method subset --force true --intermediates none --copy-ontology-annotations true -o $(RELEASEDIR)/ontorel/$(ONT)_subset-ontorel.owl

@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                1c9af26e0392240fd9e99cfa31ca52db000c32f9b59cf2deb3a9a4243fb620cc
+CONFIG_HASH=                c6a4b83ca5ef9ae666e8cde39eda078610a5a92601a0aaf6f6a888c13911d200
 
 
 # ----------------------------------------
@@ -45,7 +45,7 @@ REPORT_LABEL =              -l true
 REPORT_PROFILE_OPTS =       
 OBO_FORMAT_OPTIONS =        
 SPARQL_VALIDATION_CHECKS =  owldef-self-reference iri-range label-with-iri multiple-replaced_by 
-SPARQL_EXPORTS =            base-classes-report base-properties-report 
+SPARQL_EXPORTS =            base-classes-report base-properties-report ontorel-classes-list-report 
 ODK_VERSION_MAKEFILE =      v1.5.1
 
 TODAY ?=                    $(shell date +%Y-%m-%d)
@@ -59,7 +59,7 @@ EDIT_PREPROCESSED =         $(TMPDIR)/$(ONT)-preprocess.owl
 
 FORMATS = $(sort  owl owl)
 FORMATS_INCL_TSV = $(sort $(FORMATS) tsv)
-RELEASE_ARTEFACTS = $(sort $(ONT)-full )
+RELEASE_ARTEFACTS = $(sort $(ONT)-full $(ONT)-non-classified )
 
 ifeq ($(ODK_DEBUG),yes)
 ODK_DEBUG_FILE = debug.log
@@ -493,6 +493,10 @@ $(ONT)-full.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES)
 		reason --reasoner ELK --equivalent-classes-allowed asserted-only --exclude-tautologies structural \
 		relax \
 		reduce -r ELK \
+		$(SHARED_ROBOT_COMMANDS) annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
+# foo-non-classified: (edit->imports-merged)
+$(ONT)-non-classified.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC) $(IMPORT_FILES)
+	$(ROBOT_RELEASE_IMPORT_MODE) \
 		$(SHARED_ROBOT_COMMANDS) annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@
 # ----------------------------------------
 # Debugging Tools
