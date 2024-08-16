@@ -50,12 +50,40 @@ create_ontorel_from_subset:
 	$(ROBOT) merge -i $(RELEASEDIR)/ontorel/tempfolder/$(ONT)_ontorel1p.owl -i $(RELEASEDIR)/ontorel/tempfolder/$(ONT)_ontorel2p.owl -i $(IMPORTDIR)/Ontorel-Core_import.owl -o $(RELEASEDIR)/ontorel/$(ONT)-ontorel-slim.owl
 
 
+
+create_ontorel_from_release:
+	$(ROBOT) query -i $(RELEASEDIR)/$(ONT)-non-classified.owl --query $(SPARQLDIR)/list-ontorel-classes.sparql $(RELEASEDIR)/ontorel/tempfolder/ontorel-classes-list.txt
+	$(ROBOT) filter -i $(RELEASEDIR)/$(ONT)-non-classified.owl -T $(RELEASEDIR)/ontorel/tempfolder/ontorel-classes-list.txt --select "self annotations" --trim false \
+	annotate --ontology-iri "http://purl.obolibrary.org/obo/$(ONT)/$(ONT)_ontorel-fist-pass.owl" -o $(RELEASEDIR)/ontorel/tempfolder/$(ONT)_ontorel-first-pass.owl
+	$(ROBOT) query -i $(RELEASEDIR)/ontorel/tempfolder/$(ONT)_ontorel-first-pass.owl --query $(SPARQLDIR)/list-all-classes-and-properties.sparql $(RELEASEDIR)/ontorel/tempfolder/classes-and-properties-list.txt
+	$(ROBOT) filter -i $(RELEASEDIR)/$(ONT)-non-classified.owl -T $(RELEASEDIR)/ontorel/tempfolder/classes-and-properties-list.txt --select "self annotations" --trim true \
+	annotate --ontology-iri "http://purl.obolibrary.org/obo/$(ONT)/$(ONT)_ontorel-second-pass.owl" -o $(RELEASEDIR)/ontorel/tempfolder/$(ONT)_ontorel-second-pass.owl
+	$(ROBOT) merge -i $(RELEASEDIR)/ontorel/tempfolder/$(ONT)_ontorel-first-pass.owl -i $(RELEASEDIR)/ontorel/tempfolder/$(ONT)_ontorel-second-pass.owl -i $(IMPORTDIR)/Ontorel-Core_import.owl \
+	annotate --ontology-iri "http://purl.obolibrary.org/obo/$(ONT)/$(ONT)_ontorel-third-pass.owl" -o $(RELEASEDIR)/ontorel/tempfolder/$(ONT)_ontorel-third-pass.owl
+	$(ROBOT) query -i $(RELEASEDIR)/ontorel/tempfolder/$(ONT)_ontorel-third-pass.owl --query $(SPARQLDIR)/list-not-ontorel-classes.sparql $(RELEASEDIR)/ontorel/tempfolder/not-ontorel-classes-list.txt
+	$(ROBOT) relax -i $(RELEASEDIR)/ontorel/tempfolder/$(ONT)_ontorel-third-pass.owl \
+	remove -T $(RELEASEDIR)/ontorel/tempfolder/not-ontorel-classes-list.txt \
+	annotate --ontology-iri "http://purl.obolibrary.org/obo/$(ONT)/$(ONT)_ontorel-slim.owl" -o $(RELEASEDIR)/ontorel/$(ONT)_ontorel-slim.owl
+
 ## obsolete
 
-#create_ontorel_list:
+test_relax:
+	$(ROBOT) relax -i $(RELEASEDIR)/ontorel/tempfolder/$(ONT)_ontorel-third-pass.owl  -o $(RELEASEDIR)/ontorel/tempfolder/$(ONT)_ontorel-third-pass-relaxed.owl
+	$(ROBOT) remove -i $(RELEASEDIR)/ontorel/tempfolder/$(ONT)_ontorel-third-pass-relaxed.owl -T $(RELEASEDIR)/ontorel/tempfolder/not-ontorel-classes-list.txt \
+	annotate --ontology-iri "http://purl.obolibrary.org/obo/$(ONT)/$(ONT)_ontorel-slim.owl" -o $(RELEASEDIR)/ontorel/$(ONT)_ontorel-slim-relaxed.owl
+test_reason:
+	$(ROBOT) remove -i $(RELEASEDIR)/ontorel/tempfolder/reasontest.owl -T $(RELEASEDIR)/ontorel/subset_class_seedNC.txt -o $(RELEASEDIR)/ontorel/tempfolder/reasontest_removed.owl
+
+test_filter:
+	$(ROBOT) query -i $(RELEASEDIR)/ontorel/$(ONT)-ontorel-slim.owl --query $(SPARQLDIR)/subsetnotontorelclassfilter.sparql $(RELEASEDIR)/ontorel/subset_class_seed.txt
+
+test_remove:
+	$(ROBOT) remove -i $(RELEASEDIR)/ontorel/$(ONT)-ontorel-slim.owl -T $(RELEASEDIR)/ontorel/subset_class_seed.txt -o $(RELEASEDIR)/ontorel/$(ONT)-ontorel-v3.owl
+
+create_ontorel_list:
 	$(ROBOT) query -i $(RELEASEDIR)/$(ONT).owl --query $(SPARQLDIR)/subsetfilter.sparql $(RELEASEDIR)/ontorel/subset_seed.txt
 
-#create_class_seed:
+create_class_seed:
 	$(ROBOT) query -i $(RELEASEDIR)/$(ONT).owl --query $(SPARQLDIR)/subsetclassfilter.sparql $(RELEASEDIR)/ontorel/subset_class_seed.txt
 
 

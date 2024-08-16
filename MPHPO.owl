@@ -18,11 +18,11 @@
      xmlns:OpenLHS-Core="http://purl.obolibrary.org/obo/OpenLHS-Core#"
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/MPHPO.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MPHPO/releases/2024-08-08/MPHPO.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MPHPO/releases/2024-08-15/MPHPO.owl"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>Mortality Prediction for Hospitalized Patients Ontology</dcterms:title>
-        <owl:versionInfo>2024-08-08</owl:versionInfo>
+        <owl:versionInfo>2024-08-15</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -3460,6 +3460,7 @@ It could also includes non professionals like patient attendant but it would exc
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An information content entity that is about a sub-group of pathological conditions.</obo:IAO_0000115>
+        <obo:Ontorel-Core_0000005>joint</obo:Ontorel-Core_0000005>
         <rdfs:comment xml:lang="en">We suppose that if an ICE is about a group of particular entities, it is also about each of these entities.</rdfs:comment>
         <rdfs:label xml:lang="en">pathological condition sub-group name</rdfs:label>
     </owl:Class>
@@ -5112,6 +5113,7 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HOSO_0000126">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000115 xml:lang="en">An information content entity that describes the type of impact of a pathological condition on a clinical visit.</obo:IAO_0000115>
+        <obo:Ontorel-Core_0000005>joint</obo:Ontorel-Core_0000005>
         <obo:OpenLHS-Core_0000062 xml:lang="en">An information content entity that describes the type of impact of a pathological condition on a clinical visit.</obo:OpenLHS-Core_0000062>
         <rdfs:label xml:lang="en">pathological condition impact type on clinical visit</rdfs:label>
     </owl:Class>
@@ -5849,6 +5851,7 @@ Connor, John, born on 28/2/1985, son of Connor, Sarah born on 13/11/1965</obo:IA
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IOIO_0000010"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IOIO_0000012"/>
         <obo:IAO_0000115 xml:lang="en">A biological sex information content entity that denotes the biological sex of a human.</obo:IAO_0000115>
+        <obo:Ontorel-Core_0000005>joint</obo:Ontorel-Core_0000005>
         <obo:OpenLHS-Core_0000062 xml:lang="en">A biological sex information content entity that denotes the biological sex of a human.</obo:OpenLHS-Core_0000062>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H"/>
         <rdfs:label xml:lang="en">human biological sex information content entity</rdfs:label>
@@ -6001,6 +6004,7 @@ Connor, John, born on 28/2/1985, son of Connor, Sarah born on 13/11/1965</obo:IA
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IOIO_0000023">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000115 xml:lang="en">An information content entity that aims at representing a type of living environment applicable to a primary residence.</obo:IAO_0000115>
+        <obo:Ontorel-Core_0000005>joint</obo:Ontorel-Core_0000005>
         <rdfs:label xml:lang="en">living environment type</rdfs:label>
     </owl:Class>
     

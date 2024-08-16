@@ -57,10 +57,26 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 #   Classes
 ############################
 
+# Class: <http://purl.obolibrary.org/obo/HEPRO_0000017> (pathological condition sub-group name)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HEPRO_0000017> "joint")
+
 # Class: <http://purl.obolibrary.org/obo/HOSO_0000084> (healthcare physician service identifier)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000084> "joint")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/HOSO_0000084> <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel>)
+
+# Class: <http://purl.obolibrary.org/obo/HOSO_0000126> (pathological condition impact type on clinical visit)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000126> "joint")
+
+# Class: <http://purl.obolibrary.org/obo/IOIO_0000011> (human biological sex information content entity)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/IOIO_0000011> "joint")
+
+# Class: <http://purl.obolibrary.org/obo/IOIO_0000023> (living environment type)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/IOIO_0000023> "joint")
 
 # Class: <http://purl.obolibrary.org/obo/MPHPO_0000001> (MPHPO pathological condition impact type on clinical visit )
 

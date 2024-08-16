@@ -1,0 +1,14 @@
+#List all classes that don't have an "ontorel specification" annotation
+
+PREFIX ontorel: <http://purl.obolibrary.org/obo/Ontorel-Core_0000005>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT distinct ?term
+WHERE {
+  ?term a owl:Class .
+  MINUS {
+  ?term ontorel: ?value
+  }
+  FILTER(isIRI(?term))
+}
+
