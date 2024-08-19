@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                c6a4b83ca5ef9ae666e8cde39eda078610a5a92601a0aaf6f6a888c13911d200
+CONFIG_HASH=                cb81dc4358e9afa2aad5f26251f6d504a2fdf9fcee581a7bef60469ed24f35bb
 
 
 # ----------------------------------------
@@ -174,7 +174,7 @@ all_imports: $(IMPORT_FILES)
 # ----------------------------------------
 
 
-SUBSETS =  MPHPO-Ontorel
+SUBSETS = 
 
 SUBSET_ROOTS = $(patsubst %, $(SUBSETDIR)/%, $(SUBSETS))
 SUBSET_FILES = $(foreach n,$(SUBSET_ROOTS), $(foreach f,$(FORMATS_INCL_TSV), $(n).$(f)))

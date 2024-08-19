@@ -2,67 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://OpenLHS.github.io/RIDDLE/</loc>
-         <lastmod>2024-08-08</lastmod>
+         <lastmod>2024-08-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://OpenLHS.github.io/RIDDLE/cite/</loc>
-         <lastmod>2024-08-08</lastmod>
+         <lastmod>2024-08-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://OpenLHS.github.io/RIDDLE/contributing/</loc>
-         <lastmod>2024-08-08</lastmod>
+         <lastmod>2024-08-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://OpenLHS.github.io/RIDDLE/odk-workflows/</loc>
-         <lastmod>2024-08-08</lastmod>
+         <lastmod>2024-08-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://OpenLHS.github.io/RIDDLE/odk-workflows/ContinuousIntegration/</loc>
-         <lastmod>2024-08-08</lastmod>
+         <lastmod>2024-08-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://OpenLHS.github.io/RIDDLE/odk-workflows/EditorsWorkflow/</loc>
-         <lastmod>2024-08-08</lastmod>
+         <lastmod>2024-08-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://OpenLHS.github.io/RIDDLE/odk-workflows/ManageDocumentation/</loc>
-         <lastmod>2024-08-08</lastmod>
+         <lastmod>2024-08-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://OpenLHS.github.io/RIDDLE/odk-workflows/ReleaseWorkflow/</loc>
-         <lastmod>2024-08-08</lastmod>
+         <lastmod>2024-08-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://OpenLHS.github.io/RIDDLE/odk-workflows/RepoManagement/</loc>
-         <lastmod>2024-08-08</lastmod>
+         <lastmod>2024-08-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://OpenLHS.github.io/RIDDLE/odk-workflows/RepositoryFileStructure/</loc>
-         <lastmod>2024-08-08</lastmod>
+         <lastmod>2024-08-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://OpenLHS.github.io/RIDDLE/odk-workflows/SettingUpDockerForODK/</loc>
-         <lastmod>2024-08-08</lastmod>
+         <lastmod>2024-08-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://OpenLHS.github.io/RIDDLE/odk-workflows/UpdateImports/</loc>
-         <lastmod>2024-08-08</lastmod>
+         <lastmod>2024-08-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://OpenLHS.github.io/RIDDLE/odk-workflows/components/</loc>
-         <lastmod>2024-08-08</lastmod>
+         <lastmod>2024-08-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

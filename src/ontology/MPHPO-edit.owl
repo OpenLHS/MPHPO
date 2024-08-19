@@ -10,7 +10,7 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 Ontology(<http://purl.obolibrary.org/obo/MPHPO.owl>
 Import(<http://purl.obolibrary.org/obo/MPHPO/imports/HOSO_import.owl>)
-Import(<http://purl.obolibrary.org/obo/MPHPO/releases/2024-08-07/imports/Ontorel-Core_import.owl>)
+Import(<http://purl.obolibrary.org/obo/MPHPO/releases/2024-08-19/imports/Ontorel-Core_import.owl>)
 Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "Mortality Prediction for Hospitalized Patients Ontology")
@@ -22,21 +22,14 @@ Declaration(Class(<http://purl.obolibrary.org/obo/MPHPO_0000004>))
 Declaration(Class(<http://purl.obolibrary.org/obo/MPHPO_0000005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/MPHPO_0000006>))
 Declaration(Class(<http://purl.obolibrary.org/obo/MPHPO_0000007>))
-Declaration(Class(<http://purl.obolibrary.org/obo/MPHPO_0000008>))
 Declaration(Class(<http://purl.obolibrary.org/obo/MPHPO_0000009>))
 Declaration(Class(<http://purl.obolibrary.org/obo/MPHPO_0000010>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
 ############################
 #   Annotation Properties
 ############################
-
-# Annotation Property: <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel> (MPHPO-Ontorel)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel> "MPHPO-Ontorel"@en)
-SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel> <http://www.geneontology.org/formats/oboInOwl#SubsetProperty>)
 
 # Annotation Property: dcterms:description (description)
 
@@ -53,19 +46,39 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 
 
 
+
 ############################
 #   Classes
 ############################
 
+# Class: <http://purl.obolibrary.org/obo/HEPRO_0000017> (pathological condition sub-group name)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HEPRO_0000017> "joint")
+
+# Class: <http://purl.obolibrary.org/obo/HOSO_0000012> (healthcare organization clinical visit)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000012> "joint")
+SubClassOf(<http://purl.obolibrary.org/obo/HOSO_0000012> ObjectMinCardinality(0 <http://purl.obolibrary.org/obo/RO_0002180> <http://purl.obolibrary.org/obo/HOSO_0000012>))
+
 # Class: <http://purl.obolibrary.org/obo/HOSO_0000084> (healthcare physician service identifier)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000084> "joint")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/HOSO_0000084> <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel>)
+
+# Class: <http://purl.obolibrary.org/obo/HOSO_0000126> (pathological condition impact type on clinical visit)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000126> "joint")
+
+# Class: <http://purl.obolibrary.org/obo/IOIO_0000011> (human biological sex information content entity)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/IOIO_0000011> "joint")
+
+# Class: <http://purl.obolibrary.org/obo/IOIO_0000023> (living environment type)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/IOIO_0000023> "joint")
 
 # Class: <http://purl.obolibrary.org/obo/MPHPO_0000001> (MPHPO pathological condition impact type on clinical visit )
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/MPHPO_0000001> "interest")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/MPHPO_0000001> <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MPHPO_0000001> "Parent class with data property."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MPHPO_0000001> "MPHPO pathological condition impact type on clinical visit "@en)
 SubClassOf(<http://purl.obolibrary.org/obo/MPHPO_0000001> <http://purl.obolibrary.org/obo/HOSO_0000126>)
@@ -74,34 +87,30 @@ SubClassOf(<http://purl.obolibrary.org/obo/MPHPO_0000001> DataExactCardinality(1
 # Class: <http://purl.obolibrary.org/obo/MPHPO_0000002> (MPHPO pathological condition sub-group name )
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/MPHPO_0000002> "interest")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/MPHPO_0000002> <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MPHPO_0000002> "Parent class with data property."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MPHPO_0000002> "MPHPO pathological condition sub-group name "@en)
 SubClassOf(<http://purl.obolibrary.org/obo/MPHPO_0000002> <http://purl.obolibrary.org/obo/HEPRO_0000017>)
 SubClassOf(<http://purl.obolibrary.org/obo/MPHPO_0000002> DataExactCardinality(1 <http://purl.obolibrary.org/obo/Ontorel-Core_0000002> xsd:string))
 
-# Class: <http://purl.obolibrary.org/obo/MPHPO_0000003> (MPHPO HCOS beginning temporal information)
+# Class: <http://purl.obolibrary.org/obo/MPHPO_0000003> (MPHPO HOSD beginning temporal information)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/MPHPO_0000003> "interest")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/MPHPO_0000003> <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MPHPO_0000003> "Parent class with data property."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MPHPO_0000003> "MPHPO HCOS beginning temporal information"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MPHPO_0000003> "MPHPO HOSD beginning temporal information"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/MPHPO_0000003> <http://purl.obolibrary.org/obo/HOSO_0000102>)
 SubClassOf(<http://purl.obolibrary.org/obo/MPHPO_0000003> DataExactCardinality(1 <http://purl.obolibrary.org/obo/Ontorel-Core_0000004> <http://purl.obolibrary.org/obo/Ontorel-Core_0000001>))
 
-# Class: <http://purl.obolibrary.org/obo/MPHPO_0000004> (MPHPO HCOS ending temporal information )
+# Class: <http://purl.obolibrary.org/obo/MPHPO_0000004> (MPHPO HOSD ending temporal information )
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/MPHPO_0000004> "interest")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/MPHPO_0000004> <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MPHPO_0000004> "Parent class with data property."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MPHPO_0000004> "MPHPO HCOS ending temporal information "@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MPHPO_0000004> "MPHPO HOSD ending temporal information "@en)
 SubClassOf(<http://purl.obolibrary.org/obo/MPHPO_0000004> <http://purl.obolibrary.org/obo/HOSO_0000103>)
 SubClassOf(<http://purl.obolibrary.org/obo/MPHPO_0000004> DataExactCardinality(1 <http://purl.obolibrary.org/obo/Ontorel-Core_0000004> <http://purl.obolibrary.org/obo/Ontorel-Core_0000001>))
 
 # Class: <http://purl.obolibrary.org/obo/MPHPO_0000005> (MPHPO living environment type )
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/MPHPO_0000005> "interest")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/MPHPO_0000005> <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MPHPO_0000005> "Parent class with data property."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MPHPO_0000005> "MPHPO living environment type "@en)
 SubClassOf(<http://purl.obolibrary.org/obo/MPHPO_0000005> <http://purl.obolibrary.org/obo/IOIO_0000023>)
@@ -110,7 +119,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/MPHPO_0000005> DataExactCardinality(1
 # Class: <http://purl.obolibrary.org/obo/MPHPO_0000006> (MPHPO healthcare physician service identifier )
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/MPHPO_0000006> "interest")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/MPHPO_0000006> <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MPHPO_0000006> "Parent class with data property."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MPHPO_0000006> "MPHPO healthcare physician service identifier "@en)
 SubClassOf(<http://purl.obolibrary.org/obo/MPHPO_0000006> <http://purl.obolibrary.org/obo/HOSO_0000084>)
@@ -119,25 +127,14 @@ SubClassOf(<http://purl.obolibrary.org/obo/MPHPO_0000006> DataExactCardinality(1
 # Class: <http://purl.obolibrary.org/obo/MPHPO_0000007> (MPHPO hospitalization admission urgency level specification )
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/MPHPO_0000007> "interest")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/MPHPO_0000007> <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MPHPO_0000007> "Parent class with data property."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MPHPO_0000007> "MPHPO hospitalization admission urgency level specification "@en)
 SubClassOf(<http://purl.obolibrary.org/obo/MPHPO_0000007> <http://purl.obolibrary.org/obo/HOSO_0000076>)
 SubClassOf(<http://purl.obolibrary.org/obo/MPHPO_0000007> DataExactCardinality(1 <http://purl.obolibrary.org/obo/Ontorel-Core_0000002> xsd:string))
 
-# Class: <http://purl.obolibrary.org/obo/MPHPO_0000008> (MPHPO ICU admission specification )
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/MPHPO_0000008> "interest")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/MPHPO_0000008> <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel>)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MPHPO_0000008> "Parent class with data property."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MPHPO_0000008> "MPHPO ICU admission specification "@en)
-SubClassOf(<http://purl.obolibrary.org/obo/MPHPO_0000008> <http://purl.obolibrary.org/obo/HOSO_0000073>)
-SubClassOf(<http://purl.obolibrary.org/obo/MPHPO_0000008> DataExactCardinality(1 <http://purl.obolibrary.org/obo/Ontorel-Core_0000002> xsd:string))
-
 # Class: <http://purl.obolibrary.org/obo/MPHPO_0000009> (MPHPO human birth date)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/MPHPO_0000009> "interest")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/MPHPO_0000009> <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MPHPO_0000009> "Parent class with data property."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MPHPO_0000009> "MPHPO human birth date"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/MPHPO_0000009> <http://purl.obolibrary.org/obo/IOIO_0000020>)
@@ -146,7 +143,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/MPHPO_0000009> DataExactCardinality(1
 # Class: <http://purl.obolibrary.org/obo/MPHPO_0000010> (MPHPO human biological sex information content entity)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/MPHPO_0000010> "interest")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/MPHPO_0000010> <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/MPHPO_0000010> "Parent class with data property."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MPHPO_0000010> "MPHPO human biological sex information content entity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/MPHPO_0000010> <http://purl.obolibrary.org/obo/IOIO_0000011>)
@@ -154,49 +150,26 @@ SubClassOf(<http://purl.obolibrary.org/obo/MPHPO_0000010> DataExactCardinality(1
 
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000003> "joint")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/HOSO_0000003> <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000008> "joint")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/HOSO_0000008> <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000009> "joint")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/HOSO_0000009> <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000011> "joint")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/HOSO_0000011> <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000012> "joint")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/HOSO_0000012> <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000031> "interest")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/HOSO_0000031> <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000032> "interest")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/HOSO_0000032> <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000055> "joint")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/HOSO_0000055> <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000056> "joint")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/HOSO_0000056> <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000072> "interest")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/HOSO_0000072> <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000074> "joint")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/HOSO_0000074> <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000078> "joint")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/HOSO_0000078> <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000079> "joint")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/HOSO_0000079> <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000080> "joint")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/HOSO_0000080> <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000085> "interest")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000100> "joint")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/HOSO_0000100> <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000124> "joint")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/HOSO_0000124> <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000137> "joint")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/HOSO_0000137> <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000138> "joint")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/HOSO_0000138> <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/IOIO_0000001> "joint")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/IOIO_0000001> <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/IOIO_0000005> "joint")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/IOIO_0000005> <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/IOIO_0000014> "joint")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/IOIO_0000014> <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/IOIO_0000015> "joint")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/IOIO_0000015> <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/NCBITaxon_9606> "joint")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel>)
 )
