@@ -1,22 +1,22 @@
 ?x	?label
-_:B15fa0cb4X2D84efX2D48daX2Dba0cX2D2f638205c4adgenid105	
-_:B15fa0cb4X2D84efX2D48daX2Dba0cX2D2f638205c4adgenid118	
-_:B15fa0cb4X2D84efX2D48daX2Dba0cX2D2f638205c4adgenid127	
-_:B15fa0cb4X2D84efX2D48daX2Dba0cX2D2f638205c4adgenid132	
-_:B15fa0cb4X2D84efX2D48daX2Dba0cX2D2f638205c4adgenid150	
-_:B15fa0cb4X2D84efX2D48daX2Dba0cX2D2f638205c4adgenid155	
-_:B15fa0cb4X2D84efX2D48daX2Dba0cX2D2f638205c4adgenid160	
-_:B15fa0cb4X2D84efX2D48daX2Dba0cX2D2f638205c4adgenid169	
-_:B15fa0cb4X2D84efX2D48daX2Dba0cX2D2f638205c4adgenid177	
-_:B15fa0cb4X2D84efX2D48daX2Dba0cX2D2f638205c4adgenid185	
-_:B15fa0cb4X2D84efX2D48daX2Dba0cX2D2f638205c4adgenid190	
-_:B15fa0cb4X2D84efX2D48daX2Dba0cX2D2f638205c4adgenid211	
-_:B15fa0cb4X2D84efX2D48daX2Dba0cX2D2f638205c4adgenid219	
-_:B15fa0cb4X2D84efX2D48daX2Dba0cX2D2f638205c4adgenid235	
-_:B15fa0cb4X2D84efX2D48daX2Dba0cX2D2f638205c4adgenid243	
-_:B15fa0cb4X2D84efX2D48daX2Dba0cX2D2f638205c4adgenid247	
-_:B15fa0cb4X2D84efX2D48daX2Dba0cX2D2f638205c4adgenid252	
-_:B15fa0cb4X2D84efX2D48daX2Dba0cX2D2f638205c4adgenid93	
+_:B8424d692X2D617fX2D496dX2Db34bX2Df7775c5ebcdbgenid105	
+_:B8424d692X2D617fX2D496dX2Db34bX2Df7775c5ebcdbgenid119	
+_:B8424d692X2D617fX2D496dX2Db34bX2Df7775c5ebcdbgenid128	
+_:B8424d692X2D617fX2D496dX2Db34bX2Df7775c5ebcdbgenid133	
+_:B8424d692X2D617fX2D496dX2Db34bX2Df7775c5ebcdbgenid151	
+_:B8424d692X2D617fX2D496dX2Db34bX2Df7775c5ebcdbgenid156	
+_:B8424d692X2D617fX2D496dX2Db34bX2Df7775c5ebcdbgenid161	
+_:B8424d692X2D617fX2D496dX2Db34bX2Df7775c5ebcdbgenid170	
+_:B8424d692X2D617fX2D496dX2Db34bX2Df7775c5ebcdbgenid178	
+_:B8424d692X2D617fX2D496dX2Db34bX2Df7775c5ebcdbgenid186	
+_:B8424d692X2D617fX2D496dX2Db34bX2Df7775c5ebcdbgenid191	
+_:B8424d692X2D617fX2D496dX2Db34bX2Df7775c5ebcdbgenid211	
+_:B8424d692X2D617fX2D496dX2Db34bX2Df7775c5ebcdbgenid219	
+_:B8424d692X2D617fX2D496dX2Db34bX2Df7775c5ebcdbgenid235	
+_:B8424d692X2D617fX2D496dX2Db34bX2Df7775c5ebcdbgenid243	
+_:B8424d692X2D617fX2D496dX2Db34bX2Df7775c5ebcdbgenid247	
+_:B8424d692X2D617fX2D496dX2Db34bX2Df7775c5ebcdbgenid252	
+_:B8424d692X2D617fX2D496dX2Db34bX2Df7775c5ebcdbgenid93	
 <http://purl.obolibrary.org/obo/BFO_0000001>	"entity"
 <http://purl.obolibrary.org/obo/BFO_0000002>	"continuant"
 <http://purl.obolibrary.org/obo/BFO_0000003>	"occurrent"
@@ -56,11 +56,9 @@ _:B15fa0cb4X2D84efX2D48daX2Dba0cX2D2f638205c4adgenid93
 <http://purl.obolibrary.org/obo/HOSO_0000068>	"immediate subsequent visit"
 <http://purl.obolibrary.org/obo/HOSO_0000071>	"ambulance paramedics visit"
 <http://purl.obolibrary.org/obo/HOSO_0000072>	"ED by ambulance initiated hospitalization"
-<http://purl.obolibrary.org/obo/HOSO_0000073>	"ICU admission specification"
 <http://purl.obolibrary.org/obo/HOSO_0000074>	"clinical visit agreement specification"
 <http://purl.obolibrary.org/obo/HOSO_0000075>	"clinical visit urgency level specification"
 <http://purl.obolibrary.org/obo/HOSO_0000076>	"hospitalization admission urgency level specification"
-<http://purl.obolibrary.org/obo/HOSO_0000077>	"clinical visit unit type specification"
 <http://purl.obolibrary.org/obo/HOSO_0000078>	"hospitalization admitting physician specification"
 <http://purl.obolibrary.org/obo/HOSO_0000079>	"healthcare physician service"
 <http://purl.obolibrary.org/obo/HOSO_0000080>	"living environment type prior to clinical visit statement"
@@ -100,7 +98,6 @@ _:B15fa0cb4X2D84efX2D48daX2Dba0cX2D2f638205c4adgenid93
 <http://purl.obolibrary.org/obo/MPHPO_0000005>	"MPHPO living environment type "
 <http://purl.obolibrary.org/obo/MPHPO_0000006>	"MPHPO healthcare physician service identifier "
 <http://purl.obolibrary.org/obo/MPHPO_0000007>	"MPHPO hospitalization admission urgency level specification "
-<http://purl.obolibrary.org/obo/MPHPO_0000008>	"MPHPO ICU admission specification "
 <http://purl.obolibrary.org/obo/MPHPO_0000009>	"MPHPO human birth date"
 <http://purl.obolibrary.org/obo/MPHPO_0000010>	"MPHPO human biological sex information content entity"
 <http://purl.obolibrary.org/obo/NCBITaxon_2759>	"Eukaryota"

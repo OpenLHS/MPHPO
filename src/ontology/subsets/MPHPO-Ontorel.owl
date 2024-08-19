@@ -18,8 +18,8 @@
      xmlns:OpenLHS-Core="http://purl.obolibrary.org/obo/OpenLHS-Core#"
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/MPHPO/subsets/MPHPO-Ontorel.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MPHPO/releases/2024-08-15/subsets/MPHPO-Ontorel.owl"/>
-        <owl:versionInfo>2024-08-15</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MPHPO/releases/2024-08-16/subsets/MPHPO-Ontorel.owl"/>
+        <owl:versionInfo>2024-08-16</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -2634,6 +2634,13 @@ It could also includes non professionals like patient attendant but it would exc
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000004"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000003"/>
@@ -2870,16 +2877,6 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/HOSO_0000073 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HOSO_0000073">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000077"/>
-        <obo:IAO_0000115 xml:lang="en">A clinical visit unit type specification mandating an hospitalization admission to an intensive care unit.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">ICU admission specification</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/HOSO_0000074 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HOSO_0000074">
@@ -2908,16 +2905,6 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000075"/>
         <obo:IAO_0000115 xml:lang="en">A clinical visit urgency level specification mandating the urgency level of the hospitalization admission.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">hospitalization admission urgency level specification</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/HOSO_0000077 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HOSO_0000077">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000074"/>
-        <obo:IAO_0000115 xml:lang="en">A clinical visit agreement specification mandating the type of unit required for a clinical visit.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">clinical visit unit type specification</rdfs:label>
     </owl:Class>
     
 
@@ -3754,25 +3741,6 @@ Connor, John, born on 28/2/1985, son of Connor, Sarah born on 13/11/1965</obo:IA
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel"/>
         <rdfs:comment xml:lang="en">Parent class with data property.</rdfs:comment>
         <rdfs:label xml:lang="en">MPHPO hospitalization admission urgency level specification </rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MPHPO_0000008 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPHPO_0000008">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000073"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/Ontorel-Core_0000002"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:Ontorel-Core_0000005>interest</obo:Ontorel-Core_0000005>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/MPHPO#MPHPO-Ontorel"/>
-        <rdfs:comment xml:lang="en">Parent class with data property.</rdfs:comment>
-        <rdfs:label xml:lang="en">MPHPO ICU admission specification </rdfs:label>
     </owl:Class>
     
 

@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/MPHPO/imports/Ontorel-Core_import.owl>
-<http://purl.obolibrary.org/obo/MPHPO/releases/2024-08-07/imports/Ontorel-Core_import.owl>
+<http://purl.obolibrary.org/obo/MPHPO/releases/2024-08-19/imports/Ontorel-Core_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/Ontorel-Core/releases/2024-08-07/Ontorel-Core.owl>)
-Annotation(owl:versionInfo "2024-08-07")
+Annotation(owl:versionInfo "2024-08-19")
 
 Declaration(DataProperty(<http://purl.obolibrary.org/obo/Ontorel-Core_0000002>))
 Declaration(DataProperty(<http://purl.obolibrary.org/obo/Ontorel-Core_0000003>))

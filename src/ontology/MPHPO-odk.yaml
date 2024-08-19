@@ -18,9 +18,6 @@ import_group:
     - id: Ontorel-Core
       module_type: mirror
       mirror_from: "https://raw.githubusercontent.com/OpenLHS/Ontorel-Core/main/Ontorel-Core.owl"  
-subset_group:
-  products:
-    - id: MPHPO-Ontorel
 robot_report:
   custom_sparql_exports:
     - base-classes-report
