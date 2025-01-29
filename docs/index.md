@@ -8,7 +8,7 @@ You can find descriptions of the standard ontology engineering workflows [here](
 
 ## Ontorel schema
 
-![Screenshot](img/MPHPO_Ontorel.jpg)
+![Screenshot](img/MPHPO_Ontorel.jpeg)
 
 
 ## Ontorel Classes 
