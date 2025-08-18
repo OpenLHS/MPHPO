@@ -17,11 +17,11 @@
      xmlns:OpenLHS-Core="http://purl.obolibrary.org/obo/OpenLHS-Core#"
      xmlns:CommonCoreOntologies="http://www.ontologyrepository.com/CommonCoreOntologies/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/MPHPO/MPHPO-full.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MPHPO/releases/2025-01-29/MPHPO-full.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/MPHPO/releases/2025-08-14/MPHPO-full.owl"/>
         <dcterms:description>None</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>Mortality Prediction for Hospitalized Patients Ontology</dcterms:title>
-        <owl:versionInfo>2025-01-29</owl:versionInfo>
+        <owl:versionInfo>2025-08-14</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -458,6 +458,14 @@
 
     <rdfs:Datatype rdf:about="http://purl.obolibrary.org/obo/Ontorel-Core_0000001">
         <rdfs:label xml:lang="en">ISO8601DateTime</rdfs:label>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/Ontorel-Core_0000006 -->
+
+    <rdfs:Datatype rdf:about="http://purl.obolibrary.org/obo/Ontorel-Core_0000006">
+        <rdfs:label xml:lang="en">ISO8601Duration</rdfs:label>
     </rdfs:Datatype>
     
 
@@ -3457,6 +3465,28 @@ It could also includes non professionals like patient attendant but it would exc
     
 
 
+    <!-- http://purl.obolibrary.org/obo/HEPRO_0000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000017"/>
+        <obo:IAO_0000115 xml:lang="en">A pathological condition sub-group name that is recorded in free-text.</obo:IAO_0000115>
+        <obo:Ontorel-Core_0000005>joint</obo:Ontorel-Core_0000005>
+        <rdfs:label xml:lang="en">free-text pathological condition sub-group name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HEPRO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000017"/>
+        <obo:IAO_0000115 xml:lang="en">A pathological condition sub-group name that is recorded in a structured manner.</obo:IAO_0000115>
+        <obo:Ontorel-Core_0000005>joint</obo:Ontorel-Core_0000005>
+        <rdfs:label xml:lang="en">structured pathological condition sub-group name</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/HEPRO_0000020 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000020">
@@ -5266,6 +5296,40 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/HOSO_0000150 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HOSO_0000150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IOIO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">A human age at a specified temporal region where the temporal region is denoted by a healthcare organization service delivery beginning temporal information, and expressed according to ISO8601 standard.</obo:IAO_0000115>
+        <obo:Ontorel-Core_0000005>joint</obo:Ontorel-Core_0000005>
+        <rdfs:label xml:lang="en">human age at beginning of the healthcare organization service delivery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOSO_0000151 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HOSO_0000151">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IOIO_0000031"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000100"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000150"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A human age at a specified temporal region statement that includes an human identifier, a healthcare organization service delivery identifier, and the human age at beginning of the healthcare organization service delivery of the human denoted by the human identifier, for the healthcare organization service delivery identified by the healthcare organization service delivery identifier.</obo:IAO_0000115>
+        <obo:Ontorel-Core_0000005>interest</obo:Ontorel-Core_0000005>
+        <rdfs:label xml:lang="en">human age at the beginning of the healthcare organization service delivery statement</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000005">
@@ -6016,6 +6080,39 @@ Connor, John, born on 28/2/1985, son of Connor, Sarah born on 13/11/1965</obo:IA
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IOIO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IOIO_0000030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is about the size of the 1-D temporal region that overlaps with both the temporal region denoted by a human birth temporal information and the specified temporal region.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">human age at a specified temporal region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IOIO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IOIO_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SEPIO_0000174"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IOIO_0000014"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IOIO_0000030"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A  statement that includes an human identifier and the human age at a specified temporal region of the human denoted by the human identifier.</obo:IAO_0000115>
+        <obo:Ontorel-Core_0000005>joint</obo:Ontorel-Core_0000005>
+        <rdfs:label xml:lang="en">human age at a specified temporal region statement</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MPHPO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPHPO_0000001">
@@ -6038,14 +6135,6 @@ Connor, John, born on 28/2/1985, son of Connor, Sarah born on 13/11/1965</obo:IA
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPHPO_0000002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000017"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/Ontorel-Core_0000002"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:Ontorel-Core_0000005>interest</obo:Ontorel-Core_0000005>
         <rdfs:comment xml:lang="en">Parent class with data property.</rdfs:comment>
         <rdfs:label xml:lang="en">MPHPO pathological condition sub-group name </rdfs:label>
     </owl:Class>
@@ -6192,6 +6281,143 @@ Connor, John, born on 28/2/1985, son of Connor, Sarah born on 13/11/1965</obo:IA
         <obo:Ontorel-Core_0000005>interest</obo:Ontorel-Core_0000005>
         <rdfs:comment xml:lang="en">Parent class with data property.</rdfs:comment>
         <rdfs:label xml:lang="en">MPHPO human death date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MPHPO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPHPO_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000150"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/Ontorel-Core_0000004"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://purl.obolibrary.org/obo/Ontorel-Core_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:Ontorel-Core_0000005>interest</obo:Ontorel-Core_0000005>
+        <rdfs:comment xml:lang="en">Parent class with a data property</rdfs:comment>
+        <rdfs:label xml:lang="en">MPHPO human age at beginning of the HCOS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MPHPO_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPHPO_0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000019"/>
+        <obo:Ontorel-Core_0000005>interest</obo:Ontorel-Core_0000005>
+        <rdfs:label xml:lang="en">MPHPO coded pathological condition sub-group name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MPHPO_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPHPO_0000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000018"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/Ontorel-Core_0000002"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:Ontorel-Core_0000005>interest</obo:Ontorel-Core_0000005>
+        <rdfs:label xml:lang="en">MPHPO free-text pathological condition sub-group name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MPHPO_0000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPHPO_0000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000577"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000070"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MPHPO_0000016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/Ontorel-Core_0000002"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:Ontorel-Core_0000005>interest</obo:Ontorel-Core_0000005>
+        <rdfs:label xml:lang="en">MPHPO centrally registered identifier symbol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MPHPO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPHPO_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000579"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000070"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MPHPO_0000016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/Ontorel-Core_0000002"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:Ontorel-Core_0000005>interest</obo:Ontorel-Core_0000005>
+        <rdfs:label xml:lang="en">MPHPO centrally registered identifier registry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MPHPO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPHPO_0000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000070"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MPHPO_0000016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/Ontorel-Core_0000002"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:Ontorel-Core_0000005>interest</obo:Ontorel-Core_0000005>
+        <rdfs:label xml:lang="en">MPHPO centrally registered identifier version</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MPHPO_0000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPHPO_0000021">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000070"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MPHPO_0000016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/Ontorel-Core_0000002"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:Ontorel-Core_0000005>interest</obo:Ontorel-Core_0000005>
+        <rdfs:label xml:lang="en">MPHPO centrally registered identifier label</rdfs:label>
     </owl:Class>
     
 
@@ -6557,7 +6783,7 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000061"/>
-        <rdfs:subClassOf rdf:nodeID="genid383"/>
+        <rdfs:subClassOf rdf:nodeID="genid396"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
@@ -6568,14 +6794,14 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <rdfs:label xml:lang="en">facility</rdfs:label>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid383">
+    <owl:Restriction rdf:nodeID="genid396">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000068"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid383"/>
+        <owl:annotatedTarget rdf:nodeID="genid396"/>
         <owl:versionInfo>09/09/2017</owl:versionInfo>
     </owl:Axiom>
     
@@ -7420,10 +7646,10 @@ The phrase &quot;the pink elephant&quot; describes an entity, but is not a &apos
     <rdf:Description rdf:about="urn:swrl#p">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="urn:swrl#e">
+    <rdf:Description rdf:about="urn:swrl#d">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="urn:swrl#d">
+    <rdf:Description rdf:about="urn:swrl#e">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description>
@@ -7488,10 +7714,9 @@ The phrase &quot;the pink elephant&quot; describes an entity, but is not a &apos
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#e"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#d"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#d"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -7499,9 +7724,10 @@ The phrase &quot;the pink elephant&quot; describes an entity, but is not a &apos
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#d"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#e"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#d"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -7531,10 +7757,9 @@ The phrase &quot;the pink elephant&quot; describes an entity, but is not a &apos
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#e"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#d"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#d"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -7542,9 +7767,10 @@ The phrase &quot;the pink elephant&quot; describes an entity, but is not a &apos
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#d"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#e"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#d"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -7574,10 +7800,9 @@ The phrase &quot;the pink elephant&quot; describes an entity, but is not a &apos
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#e"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#d"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#d"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -7585,9 +7810,10 @@ The phrase &quot;the pink elephant&quot; describes an entity, but is not a &apos
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#d"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#e"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#d"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -7617,10 +7843,9 @@ The phrase &quot;the pink elephant&quot; describes an entity, but is not a &apos
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                        <swrl:argument1 rdf:resource="urn:swrl#e"/>
-                        <swrl:argument2 rdf:resource="urn:swrl#d"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#d"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -7628,9 +7853,10 @@ The phrase &quot;the pink elephant&quot; describes an entity, but is not a &apos
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
-                                <swrl:argument1 rdf:resource="urn:swrl#d"/>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#e"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#d"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
