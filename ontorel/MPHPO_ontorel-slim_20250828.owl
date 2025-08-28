@@ -211,6 +211,18 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
@@ -232,6 +244,14 @@
 
     <rdfs:Datatype rdf:about="http://purl.obolibrary.org/obo/Ontorel-Core_0000001">
         <rdfs:label xml:lang="en">ISO8601DateTime</rdfs:label>
+    </rdfs:Datatype>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/Ontorel-Core_0000006 -->
+
+    <rdfs:Datatype rdf:about="http://purl.obolibrary.org/obo/Ontorel-Core_0000006">
+        <rdfs:label xml:lang="en">ISO8601Duration</rdfs:label>
     </rdfs:Datatype>
     
 
@@ -421,6 +441,18 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0002018 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002018">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
+        <obo:IAO_0000115>w &apos;has process component&apos; p if p and w are processes,  w &apos;has part&apos; p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type.</obo:IAO_0000115>
+        <oboInOwl:created_by>dos</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-05-24T09:49:21Z</oboInOwl:creation_date>
+        <rdfs:label>has component process</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002087 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002087">
@@ -549,6 +581,28 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/HEPRO_0000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000017"/>
+        <obo:IAO_0000115 xml:lang="en">A pathological condition sub-group name that is recorded in free-text.</obo:IAO_0000115>
+        <obo:Ontorel-Core_0000005>joint</obo:Ontorel-Core_0000005>
+        <rdfs:label xml:lang="en">free-text pathological condition sub-group name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HEPRO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000017"/>
+        <obo:IAO_0000115 xml:lang="en">A pathological condition sub-group name that is recorded in a structured manner.</obo:IAO_0000115>
+        <obo:Ontorel-Core_0000005>joint</obo:Ontorel-Core_0000005>
+        <rdfs:label xml:lang="en">structured pathological condition sub-group name</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/HOSO_0000003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HOSO_0000003">
@@ -608,13 +662,6 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000012"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000004"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000003"/>
@@ -628,11 +675,29 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/HOSO_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HOSO_0000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000012"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002018"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A temporally-connected healthcare organization clinical visit that aims to improve, maintain or restore the health of some participating organism. It may have several healthcare organization clinical visits as components.</obo:IAO_0000115>
+        <obo:Ontorel-Core_0000005>interest</obo:Ontorel-Core_0000005>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H"/>
+        <rdfs:label xml:lang="en">healthcare organization clinical encounter</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/HOSO_0000031 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HOSO_0000031">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000012"/>
-        <obo:IAO_0000115 xml:lang="en">An inpatient visit located in a hospital facility requested by a physician, that may extends overnight.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An inpatient visit located in a hospital facility requested by a physician, where the healthcare organization can offer an extension overnight.</obo:IAO_0000115>
         <obo:Ontorel-Core_0000005>interest</obo:Ontorel-Core_0000005>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H"/>
         <rdfs:label xml:lang="en">hospitalization</rdfs:label>
@@ -898,6 +963,7 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/HOSO_0000126 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HOSO_0000126">
+        <obo:IAO_0000112 xml:lang="en">&apos;primary diagnosis&apos; or &apos;secondary diagnosis&apos; associated with a diagnosis code.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">An information content entity that describes the type of impact of a pathological condition on a clinical visit.</obo:IAO_0000115>
         <obo:Ontorel-Core_0000005>joint</obo:Ontorel-Core_0000005>
         <obo:OpenLHS-Core_0000062 xml:lang="en">An information content entity that describes the type of impact of a pathological condition on a clinical visit.</obo:OpenLHS-Core_0000062>
@@ -946,6 +1012,39 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
         <obo:Ontorel-Core_0000005>joint</obo:Ontorel-Core_0000005>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H"/>
         <rdfs:label xml:lang="en">healthcare provider identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOSO_0000150 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HOSO_0000150">
+        <obo:IAO_0000115 xml:lang="en">A human age at a specified temporal region where the temporal region is denoted by a healthcare organization service delivery beginning temporal information, and expressed according to ISO8601 standard.</obo:IAO_0000115>
+        <obo:Ontorel-Core_0000005>joint</obo:Ontorel-Core_0000005>
+        <rdfs:label xml:lang="en">human age at beginning of the healthcare organization service delivery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HOSO_0000151 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HOSO_0000151">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IOIO_0000031"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000100"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000150"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A human age at a specified temporal region statement that includes an human identifier, a healthcare organization service delivery identifier, and the human age at beginning of the healthcare organization service delivery of the human denoted by the human identifier, for the healthcare organization service delivery identified by the healthcare organization service delivery identifier.</obo:IAO_0000115>
+        <obo:Ontorel-Core_0000005>interest</obo:Ontorel-Core_0000005>
+        <rdfs:label xml:lang="en">human age at the beginning of the healthcare organization service delivery statement</rdfs:label>
     </owl:Class>
     
 
@@ -1100,6 +1199,22 @@ Connor, John, born on 28/2/1985, son of Connor, Sarah born on 13/11/1965</obo:IA
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IOIO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IOIO_0000031">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IOIO_0000014"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A  statement that includes an human identifier and the human age at a specified temporal region of the human denoted by the human identifier.</obo:IAO_0000115>
+        <obo:Ontorel-Core_0000005>joint</obo:Ontorel-Core_0000005>
+        <rdfs:label xml:lang="en">human age at a specified temporal region statement</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/MPHPO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPHPO_0000001">
@@ -1114,24 +1229,6 @@ Connor, John, born on 28/2/1985, son of Connor, Sarah born on 13/11/1965</obo:IA
         <obo:Ontorel-Core_0000005>interest</obo:Ontorel-Core_0000005>
         <rdfs:comment xml:lang="en">Parent class with data property.</rdfs:comment>
         <rdfs:label xml:lang="en">MPHPO pathological condition impact type on clinical visit </rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/MPHPO_0000002 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPHPO_0000002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000017"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/Ontorel-Core_0000002"/>
-                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:Ontorel-Core_0000005>interest</obo:Ontorel-Core_0000005>
-        <rdfs:comment xml:lang="en">Parent class with data property.</rdfs:comment>
-        <rdfs:label xml:lang="en">MPHPO pathological condition sub-group name </rdfs:label>
     </owl:Class>
     
 
@@ -1276,6 +1373,139 @@ Connor, John, born on 28/2/1985, son of Connor, Sarah born on 13/11/1965</obo:IA
         <obo:Ontorel-Core_0000005>interest</obo:Ontorel-Core_0000005>
         <rdfs:comment xml:lang="en">Parent class with data property.</rdfs:comment>
         <rdfs:label xml:lang="en">MPHPO human death date</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MPHPO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPHPO_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000150"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/Ontorel-Core_0000004"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://purl.obolibrary.org/obo/Ontorel-Core_0000006"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:Ontorel-Core_0000005>interest</obo:Ontorel-Core_0000005>
+        <rdfs:comment xml:lang="en">Parent class with a data property</rdfs:comment>
+        <rdfs:label xml:lang="en">MPHPO human age at beginning of the HCOS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MPHPO_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPHPO_0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000019"/>
+        <obo:Ontorel-Core_0000005>interest</obo:Ontorel-Core_0000005>
+        <rdfs:label xml:lang="en">MPHPO coded pathological condition sub-group name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MPHPO_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPHPO_0000017">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000018"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/Ontorel-Core_0000002"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:Ontorel-Core_0000005>interest</obo:Ontorel-Core_0000005>
+        <rdfs:label xml:lang="en">MPHPO free-text pathological condition sub-group name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MPHPO_0000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPHPO_0000018">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000070"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MPHPO_0000016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/Ontorel-Core_0000002"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:Ontorel-Core_0000005>interest</obo:Ontorel-Core_0000005>
+        <rdfs:label xml:lang="en">MPHPO centrally registered identifier symbol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MPHPO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPHPO_0000019">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000070"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MPHPO_0000016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/Ontorel-Core_0000002"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:Ontorel-Core_0000005>interest</obo:Ontorel-Core_0000005>
+        <rdfs:label xml:lang="en">MPHPO centrally registered identifier registry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MPHPO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPHPO_0000020">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000070"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MPHPO_0000016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/Ontorel-Core_0000002"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:Ontorel-Core_0000005>interest</obo:Ontorel-Core_0000005>
+        <rdfs:label xml:lang="en">MPHPO centrally registered identifier version</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MPHPO_0000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/MPHPO_0000021">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000070"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/MPHPO_0000016"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/Ontorel-Core_0000002"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:Ontorel-Core_0000005>interest</obo:Ontorel-Core_0000005>
+        <rdfs:label xml:lang="en">MPHPO centrally registered identifier label</rdfs:label>
     </owl:Class>
     
 

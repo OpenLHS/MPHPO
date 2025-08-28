@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/MPHPO/imports/Ontorel-Core_import.owl>
-<http://purl.obolibrary.org/obo/MPHPO/releases/2024-08-19/imports/Ontorel-Core_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/Ontorel-Core/releases/2024-08-07/Ontorel-Core.owl>)
-Annotation(owl:versionInfo "2024-08-19")
+<http://purl.obolibrary.org/obo/MPHPO/releases/2025-08-28/imports/Ontorel-Core_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/Ontorel-Core/releases/2025-08-02/Ontorel-Core.owl>)
+Annotation(owl:versionInfo "2025-08-28")
 
 Declaration(DataProperty(<http://purl.obolibrary.org/obo/Ontorel-Core_0000002>))
 Declaration(DataProperty(<http://purl.obolibrary.org/obo/Ontorel-Core_0000003>))
@@ -21,6 +21,7 @@ Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
 Declaration(Datatype(<http://purl.obolibrary.org/obo/Ontorel-Core_0000001>))
+Declaration(Datatype(<http://purl.obolibrary.org/obo/Ontorel-Core_0000006>))
 ############################
 #   Annotation Properties
 ############################
@@ -78,6 +79,10 @@ SubDataPropertyOf(<http://purl.obolibrary.org/obo/Ontorel-Core_0000004> owl:topD
 # Datatype: <http://purl.obolibrary.org/obo/Ontorel-Core_0000001> (ISO8601DateTime)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/Ontorel-Core_0000001> "ISO8601DateTime"@en)
+
+# Datatype: <http://purl.obolibrary.org/obo/Ontorel-Core_0000006> (ISO8601Duration)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/Ontorel-Core_0000006> "ISO8601Duration"@en)
 
 
 )
