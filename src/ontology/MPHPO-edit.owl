@@ -71,11 +71,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http:
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HEPRO_0000019> "joint")
 
-# Class: <http://purl.obolibrary.org/obo/HOSO_0000012> (healthcare organization clinical visit)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000012> "joint")
-SubClassOf(<http://purl.obolibrary.org/obo/HOSO_0000012> ObjectMinCardinality(0 <http://purl.obolibrary.org/obo/RO_0002180> <http://purl.obolibrary.org/obo/HOSO_0000012>))
-
 # Class: <http://purl.obolibrary.org/obo/HOSO_0000084> (healthcare physician service identifier)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000084> "joint")
@@ -240,6 +235,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http:
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000008> "joint")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000009> "joint")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000011> "joint")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000012> "joint")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000017> "interest")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000031> "interest")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000032> "interest")

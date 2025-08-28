@@ -8,7 +8,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://purl.obolibrary.org/obo/MPHPO/imports/HOSO_import.owl>
 <http://purl.obolibrary.org/obo/MPHPO/releases/2025-08-28/imports/HOSO_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/HOSO/releases/2025-08-14/HOSO.owl>)
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/HOSO/releases/2025-08-28/HOSO.owl>)
 Annotation(owl:versionInfo "2025-08-28")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000001>))
@@ -150,6 +150,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/HOSO_0000082>))
 Declaration(Class(<http://purl.obolibrary.org/obo/HOSO_0000083>))
 Declaration(Class(<http://purl.obolibrary.org/obo/HOSO_0000084>))
 Declaration(Class(<http://purl.obolibrary.org/obo/HOSO_0000085>))
+Declaration(Class(<http://purl.obolibrary.org/obo/HOSO_0000086>))
 Declaration(Class(<http://purl.obolibrary.org/obo/HOSO_0000100>))
 Declaration(Class(<http://purl.obolibrary.org/obo/HOSO_0000102>))
 Declaration(Class(<http://purl.obolibrary.org/obo/HOSO_0000103>))
@@ -2340,10 +2341,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/HOSO_0000016> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/HOSO_0000017> (healthcare organization clinical encounter)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/HOSO_0000017> "A temporally-connected healthcare organization clinical visit that aims to improve, maintain or restore the health of some participating organism."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/HOSO_0000017> "A temporally-connected healthcare organization clinical visit that aims to improve, maintain or restore the health of some participating organism. It may have several healthcare organization clinical visits as components."@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/HOSO_0000017> <http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HOSO_0000017> "healthcare organization clinical encounter"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/HOSO_0000017> <http://purl.obolibrary.org/obo/HOSO_0000012>)
+SubClassOf(<http://purl.obolibrary.org/obo/HOSO_0000017> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002018> <http://purl.obolibrary.org/obo/HOSO_0000012>))
 
 # Class: <http://purl.obolibrary.org/obo/HOSO_0000018> (facility-supported healthcare encounter)
 
@@ -2408,7 +2410,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/HOSO_0000030> ObjectSomeValuesFrom(<h
 
 # Class: <http://purl.obolibrary.org/obo/HOSO_0000031> (hospitalization)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/HOSO_0000031> "An inpatient visit located in a hospital facility requested by a physician, that may extends overnight."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/HOSO_0000031> "An inpatient visit located in a hospital facility requested by a physician, where the healthcare organization can offer an extension overnight."@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/HOSO_0000031> <http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HOSO_0000031> "hospitalization"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/HOSO_0000031> <http://purl.obolibrary.org/obo/HOSO_0000028>)
@@ -2767,6 +2769,13 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HOSO_0000085> "ho
 EquivalentClasses(<http://purl.obolibrary.org/obo/HOSO_0000085> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/HOSO_0000031> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000004> <http://purl.obolibrary.org/obo/HOSO_0000073>)))
 SubClassOf(<http://purl.obolibrary.org/obo/HOSO_0000085> <http://purl.obolibrary.org/obo/HOSO_0000031>)
 
+# Class: <http://purl.obolibrary.org/obo/HOSO_0000086> (clinical visit admission diagnosis)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/HOSO_0000086> "A clinical visit agreement specification stating the diagnosis as the cause of the visit (TBD)"@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/HOSO_0000086> "Voir si on sous-classe sous 'pathological condition presence statement'")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HOSO_0000086> "clinical visit admission diagnosis"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/HOSO_0000086> <http://purl.obolibrary.org/obo/HOSO_0000074>)
+
 # Class: <http://purl.obolibrary.org/obo/HOSO_0000100> (healthcare organization service delivery identifier)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/HOSO_0000100> "An identifier that denotes a healthcare organization service delivery."@en)
@@ -2837,6 +2846,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/HOSO_0000125> <http://purl.obolibrary
 
 # Class: <http://purl.obolibrary.org/obo/HOSO_0000126> (pathological condition impact type on clinical visit)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/HOSO_0000126> "'primary diagnosis' or 'secondary diagnosis' associated with a diagnosis code."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/HOSO_0000126> "An information content entity that describes the type of impact of a pathological condition on a clinical visit."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/OpenLHS-Core_0000062> <http://purl.obolibrary.org/obo/HOSO_0000126> "An information content entity that describes the type of impact of a pathological condition on a clinical visit."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/HOSO_0000126> "pathological condition impact type on clinical visit"@en)

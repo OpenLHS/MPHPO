@@ -3,11 +3,10 @@
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/MPHPO/releases/2025-08-28/imports/Ontorel-Core_import.owl" uri="imports/Ontorel-Core_import.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/MPHPO/releases/2025-08-28/imports/HOSO_import.owl" uri="imports/HOSO_import.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1756404148130" name="http://purl.obolibrary.org/obo/HOSO.owl" uri="mirror/HOSO.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1756404148130" name="http://purl.obolibrary.org/obo/MPHPO.owl" uri="tmp/merged-MPHPO-edit.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1756404148130" name="http://purl.obolibrary.org/obo/MPHPO/subsets/MPHPO-Ontorel.owl" uri="subsets/MPHPO-Ontorel.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1756404148130" name="http://purl.obolibrary.org/obo/Ontorel-Core.owl" uri="mirror/Ontorel-Core.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1756404148130" name="shadowed:http://purl.obolibrary.org/obo/HOSO.owl" uri="tmp/mirror-HOSO.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1756404148130" name="shadowed:http://purl.obolibrary.org/obo/Ontorel-Core.owl" uri="tmp/mirror-Ontorel-Core.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1756405185867" name="http://purl.obolibrary.org/obo/HOSO.owl" uri="mirror/HOSO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1756405185867" name="http://purl.obolibrary.org/obo/MPHPO/subsets/MPHPO-Ontorel.owl" uri="subsets/MPHPO-Ontorel.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1756405185867" name="http://purl.obolibrary.org/obo/Ontorel-Core.owl" uri="mirror/Ontorel-Core.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1756405185867" name="shadowed:http://purl.obolibrary.org/obo/HOSO.owl" uri="tmp/mirror-HOSO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1756405185867" name="shadowed:http://purl.obolibrary.org/obo/Ontorel-Core.owl" uri="tmp/mirror-Ontorel-Core.owl"/>
     </group>
 </catalog>

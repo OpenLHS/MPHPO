@@ -3470,6 +3470,7 @@ It could also includes non professionals like patient attendant but it would exc
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000018">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000017"/>
         <obo:IAO_0000115 xml:lang="en">A pathological condition sub-group name that is recorded in free-text.</obo:IAO_0000115>
+        <obo:Ontorel-Core_0000005>joint</obo:Ontorel-Core_0000005>
         <rdfs:label xml:lang="en">free-text pathological condition sub-group name</rdfs:label>
     </owl:Class>
     
@@ -3480,6 +3481,7 @@ It could also includes non professionals like patient attendant but it would exc
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HEPRO_0000019">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HEPRO_0000017"/>
         <obo:IAO_0000115 xml:lang="en">A pathological condition sub-group name that is recorded in a structured manner.</obo:IAO_0000115>
+        <obo:Ontorel-Core_0000005>joint</obo:Ontorel-Core_0000005>
         <rdfs:label xml:lang="en">structured pathological condition sub-group name</rdfs:label>
     </owl:Class>
     
@@ -3890,13 +3892,6 @@ It could also includes non professionals like patient attendant but it would exc
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002180"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000012"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core_0000004"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000003"/>
@@ -3947,7 +3942,13 @@ It could also includes non professionals like patient attendant but it would exc
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HOSO_0000017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000012"/>
-        <obo:IAO_0000115 xml:lang="en">A temporally-connected healthcare organization clinical visit that aims to improve, maintain or restore the health of some participating organism.</obo:IAO_0000115>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002018"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000012"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A temporally-connected healthcare organization clinical visit that aims to improve, maintain or restore the health of some participating organism. It may have several healthcare organization clinical visits as components.</obo:IAO_0000115>
         <obo:Ontorel-Core_0000005>interest</obo:Ontorel-Core_0000005>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H"/>
         <rdfs:label xml:lang="en">healthcare organization clinical encounter</rdfs:label>
@@ -4083,7 +4084,7 @@ It could also includes non professionals like patient attendant but it would exc
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HOSO_0000031">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000028"/>
-        <obo:IAO_0000115 xml:lang="en">An inpatient visit located in a hospital facility requested by a physician, that may extends overnight.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An inpatient visit located in a hospital facility requested by a physician, where the healthcare organization can offer an extension overnight.</obo:IAO_0000115>
         <obo:Ontorel-Core_0000005>interest</obo:Ontorel-Core_0000005>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H"/>
         <rdfs:label xml:lang="en">hospitalization</rdfs:label>
@@ -5009,6 +5010,17 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/HOSO_0000086 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HOSO_0000086">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000074"/>
+        <obo:IAO_0000115 xml:lang="en">A clinical visit agreement specification stating the diagnosis as the cause of the visit (TBD)</obo:IAO_0000115>
+        <rdfs:comment>Voir si on sous-classe sous &apos;pathological condition presence statement&apos;</rdfs:comment>
+        <rdfs:label xml:lang="en">clinical visit admission diagnosis</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/HOSO_0000100 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HOSO_0000100">
@@ -5151,6 +5163,7 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HOSO_0000126">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000112 xml:lang="en">&apos;primary diagnosis&apos; or &apos;secondary diagnosis&apos; associated with a diagnosis code.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">An information content entity that describes the type of impact of a pathological condition on a clinical visit.</obo:IAO_0000115>
         <obo:Ontorel-Core_0000005>joint</obo:Ontorel-Core_0000005>
         <obo:OpenLHS-Core_0000062 xml:lang="en">An information content entity that describes the type of impact of a pathological condition on a clinical visit.</obo:OpenLHS-Core_0000062>
@@ -5300,6 +5313,7 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/HOSO_0000150">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IOIO_0000030"/>
         <obo:IAO_0000115 xml:lang="en">A human age at a specified temporal region where the temporal region is denoted by a healthcare organization service delivery beginning temporal information, and expressed according to ISO8601 standard.</obo:IAO_0000115>
+        <obo:Ontorel-Core_0000005>joint</obo:Ontorel-Core_0000005>
         <rdfs:label xml:lang="en">human age at beginning of the healthcare organization service delivery</rdfs:label>
     </owl:Class>
     
@@ -5322,6 +5336,7 @@ It is not necessarily an immediate inpatient subsequent visit.</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A human age at a specified temporal region statement that includes an human identifier, a healthcare organization service delivery identifier, and the human age at beginning of the healthcare organization service delivery of the human denoted by the human identifier, for the healthcare organization service delivery identified by the healthcare organization service delivery identifier.</obo:IAO_0000115>
+        <obo:Ontorel-Core_0000005>interest</obo:Ontorel-Core_0000005>
         <rdfs:label xml:lang="en">human age at the beginning of the healthcare organization service delivery statement</rdfs:label>
     </owl:Class>
     
@@ -6104,6 +6119,7 @@ Connor, John, born on 28/2/1985, son of Connor, Sarah born on 13/11/1965</obo:IA
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A  statement that includes an human identifier and the human age at a specified temporal region of the human denoted by the human identifier.</obo:IAO_0000115>
+        <obo:Ontorel-Core_0000005>joint</obo:Ontorel-Core_0000005>
         <rdfs:label xml:lang="en">human age at a specified temporal region statement</rdfs:label>
     </owl:Class>
     
@@ -6779,7 +6795,7 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000061"/>
-        <rdfs:subClassOf rdf:nodeID="genid412"/>
+        <rdfs:subClassOf rdf:nodeID="genid421"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
@@ -6790,14 +6806,14 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <rdfs:label xml:lang="en">facility</rdfs:label>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid412">
+    <owl:Restriction rdf:nodeID="genid421">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000068"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid412"/>
+        <owl:annotatedTarget rdf:nodeID="genid421"/>
         <owl:versionInfo>09/09/2017</owl:versionInfo>
     </owl:Axiom>
     
