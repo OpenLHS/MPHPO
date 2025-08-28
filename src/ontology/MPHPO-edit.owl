@@ -9,8 +9,8 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/MPHPO.owl>
-Import(<http://purl.obolibrary.org/obo/MPHPO/imports/HOSO_import.owl>)
-Import(<http://purl.obolibrary.org/obo/MPHPO/releases/2025-08-14/imports/Ontorel-Core_import.owl>)
+Import(<http://purl.obolibrary.org/obo/MPHPO/releases/2025-08-28/imports/HOSO_import.owl>)
+Import(<http://purl.obolibrary.org/obo/MPHPO/releases/2025-08-28/imports/Ontorel-Core_import.owl>)
 Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "Mortality Prediction for Hospitalized Patients Ontology")
@@ -240,6 +240,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http:
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000008> "joint")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000009> "joint")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000011> "joint")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000017> "interest")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000031> "interest")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000032> "interest")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005> <http://purl.obolibrary.org/obo/HOSO_0000055> "joint")
