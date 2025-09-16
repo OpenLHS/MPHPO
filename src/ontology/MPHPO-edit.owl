@@ -10,7 +10,6 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 Ontology(<http://purl.obolibrary.org/obo/MPHPO.owl>
 Import(<http://purl.obolibrary.org/obo/MPHPO/imports/HOSO_import.owl>)
-Import(<http://purl.obolibrary.org/obo/MPHPO/imports/Ontorel-Core_import.owl>)
 Annotation(dcterms:description "None")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 Annotation(dcterms:title "Mortality Prediction for Hospitalized Patients Ontology")

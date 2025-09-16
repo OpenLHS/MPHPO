@@ -10,9 +10,9 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/MPHPO/imports/Ontorel-Core_import.owl>
-<http://purl.obolibrary.org/obo/MPHPO/releases/2025-09-06/imports/Ontorel-Core_import.owl>
+<http://purl.obolibrary.org/obo/MPHPO/releases/2025-09-09/imports/Ontorel-Core_import.owl>
 Annotation(dce:source <http://purl.obolibrary.org/obo/Ontorel-Core/releases/2025-08-02/Ontorel-Core.owl>)
-Annotation(owl:versionInfo "2025-09-06")
+Annotation(owl:versionInfo "2025-09-09")
 
 Declaration(DataProperty(obo:Ontorel-Core_0000002))
 Declaration(DataProperty(obo:Ontorel-Core_0000003))
