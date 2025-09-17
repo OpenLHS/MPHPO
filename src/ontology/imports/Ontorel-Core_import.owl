@@ -1,88 +1,91 @@
 Prefix(:=<http://purl.obolibrary.org/obo/MPHPO/imports/Ontorel-Core_import.owl#>)
+Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
+Prefix(obo:=<http://purl.obolibrary.org/obo/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/MPHPO/imports/Ontorel-Core_import.owl>
-<http://purl.obolibrary.org/obo/MPHPO/releases/2025-08-28/imports/Ontorel-Core_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/Ontorel-Core/releases/2025-08-02/Ontorel-Core.owl>)
-Annotation(owl:versionInfo "2025-08-28")
+<http://purl.obolibrary.org/obo/MPHPO/releases/2025-09-09/imports/Ontorel-Core_import.owl>
+Annotation(dce:source <http://purl.obolibrary.org/obo/Ontorel-Core/releases/2025-08-02/Ontorel-Core.owl>)
+Annotation(owl:versionInfo "2025-09-09")
 
-Declaration(DataProperty(<http://purl.obolibrary.org/obo/Ontorel-Core_0000002>))
-Declaration(DataProperty(<http://purl.obolibrary.org/obo/Ontorel-Core_0000003>))
-Declaration(DataProperty(<http://purl.obolibrary.org/obo/Ontorel-Core_0000004>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/Ontorel-Core_0000005>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
-Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
-Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
-Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
-Declaration(Datatype(<http://purl.obolibrary.org/obo/Ontorel-Core_0000001>))
-Declaration(Datatype(<http://purl.obolibrary.org/obo/Ontorel-Core_0000006>))
+Declaration(DataProperty(obo:Ontorel-Core_0000002))
+Declaration(DataProperty(obo:Ontorel-Core_0000003))
+Declaration(DataProperty(obo:Ontorel-Core_0000004))
+Declaration(AnnotationProperty(obo:IAO_0000115))
+Declaration(AnnotationProperty(obo:Ontorel-Core_0000005))
+Declaration(AnnotationProperty(dce:source))
+Declaration(AnnotationProperty(dcterms:description))
+Declaration(AnnotationProperty(dcterms:license))
+Declaration(AnnotationProperty(dcterms:title))
+Declaration(Datatype(obo:Ontorel-Core_0000001))
+Declaration(Datatype(obo:Ontorel-Core_0000006))
 ############################
 #   Annotation Properties
 ############################
 
-# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000115> (definition)
+# Annotation Property: obo:IAO_0000115 (definition)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "definition"@en)
+AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition"@en)
 
-# Annotation Property: <http://purl.obolibrary.org/obo/Ontorel-Core_0000005> (ontorel specification)
+# Annotation Property: obo:Ontorel-Core_0000005 (ontorel specification)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/Ontorel-Core_0000005> "An annotation property used to tag relevant classes for ontorel generation."@en)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/Ontorel-Core_0000005> "Three values for this annotation (WIP) :
+AnnotationAssertion(obo:IAO_0000115 obo:Ontorel-Core_0000005 "An annotation property used to tag relevant classes for ontorel generation."@en)
+AnnotationAssertion(rdfs:comment obo:Ontorel-Core_0000005 "Three values for this annotation (WIP) :
  - interest: means that the annotated class instances or associated data properties are of interest for a request.
  - joint: means that the annotated clas or property is necessary for a jointure in the request.
  - pivot: means that the annotated class is the pivot of the request."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/Ontorel-Core_0000005> "ontorel specification"@en)
+AnnotationAssertion(rdfs:label obo:Ontorel-Core_0000005 "ontorel specification"@en)
 
-# Annotation Property: <http://purl.org/dc/terms/description> (description)
+# Annotation Property: dcterms:description (description)
 
-AnnotationAssertion(rdfs:label <http://purl.org/dc/terms/description> "description")
+AnnotationAssertion(rdfs:label dcterms:description "description")
 
-# Annotation Property: <http://purl.org/dc/terms/license> (license)
+# Annotation Property: dcterms:license (license)
 
-AnnotationAssertion(rdfs:label <http://purl.org/dc/terms/license> "license")
+AnnotationAssertion(rdfs:label dcterms:license "license")
 
-# Annotation Property: <http://purl.org/dc/terms/title> (title)
+# Annotation Property: dcterms:title (title)
 
-AnnotationAssertion(rdfs:label <http://purl.org/dc/terms/title> "title")
+AnnotationAssertion(rdfs:label dcterms:title "title")
 
 
 ############################
 #   Data Properties
 ############################
 
-# Data Property: <http://purl.obolibrary.org/obo/Ontorel-Core_0000002> (has textual value)
+# Data Property: obo:Ontorel-Core_0000002 (has textual value)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/Ontorel-Core_0000002> "has textual value"@en)
-SubDataPropertyOf(<http://purl.obolibrary.org/obo/Ontorel-Core_0000002> owl:topDataProperty)
+AnnotationAssertion(rdfs:label obo:Ontorel-Core_0000002 "has textual value"@en)
+SubDataPropertyOf(obo:Ontorel-Core_0000002 owl:topDataProperty)
 
-# Data Property: <http://purl.obolibrary.org/obo/Ontorel-Core_0000003> (has numerical value)
+# Data Property: obo:Ontorel-Core_0000003 (has numerical value)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/Ontorel-Core_0000003> "has numerical value"@en)
-SubDataPropertyOf(<http://purl.obolibrary.org/obo/Ontorel-Core_0000003> owl:topDataProperty)
+AnnotationAssertion(rdfs:label obo:Ontorel-Core_0000003 "has numerical value"@en)
+SubDataPropertyOf(obo:Ontorel-Core_0000003 owl:topDataProperty)
 
-# Data Property: <http://purl.obolibrary.org/obo/Ontorel-Core_0000004> (has temporal value)
+# Data Property: obo:Ontorel-Core_0000004 (has temporal value)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/Ontorel-Core_0000004> "has temporal value"@en)
-SubDataPropertyOf(<http://purl.obolibrary.org/obo/Ontorel-Core_0000004> owl:topDataProperty)
+AnnotationAssertion(rdfs:label obo:Ontorel-Core_0000004 "has temporal value"@en)
+SubDataPropertyOf(obo:Ontorel-Core_0000004 owl:topDataProperty)
 
 
 ############################
 #   Datatypes
 ############################
 
-# Datatype: <http://purl.obolibrary.org/obo/Ontorel-Core_0000001> (ISO8601DateTime)
+# Datatype: obo:Ontorel-Core_0000001 (ISO8601DateTime)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/Ontorel-Core_0000001> "ISO8601DateTime"@en)
+AnnotationAssertion(rdfs:label obo:Ontorel-Core_0000001 "ISO8601DateTime"@en)
 
-# Datatype: <http://purl.obolibrary.org/obo/Ontorel-Core_0000006> (ISO8601Duration)
+# Datatype: obo:Ontorel-Core_0000006 (ISO8601Duration)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/Ontorel-Core_0000006> "ISO8601Duration"@en)
+AnnotationAssertion(rdfs:label obo:Ontorel-Core_0000006 "ISO8601Duration"@en)
 
 
 )

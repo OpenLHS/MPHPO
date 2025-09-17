@@ -1,0 +1,2864 @@
+{
+  "graphs" : [ {
+    "id" : "http://purl.obolibrary.org/obo/MPHPO/MPHPO_ontorel-slim.owl",
+    "nodes" : [ {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000017",
+      "lbl" : "pathological condition sub-group name",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An information content entity that is about a sub-group of pathological conditions."
+        },
+        "comments" : [ "We suppose that if an ICE is about a group of particular entities, it is also about each of these entities." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "joint"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000018",
+      "lbl" : "free-text pathological condition sub-group name",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A pathological condition sub-group name that is recorded in free-text."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "joint"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HEPRO_0000019",
+      "lbl" : "structured pathological condition sub-group name",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A pathological condition sub-group name that is recorded in a structured manner."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "joint"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000003",
+      "lbl" : "healthcare service organism specification",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A service agreement directive entity identifying an organism for whom a healthcare service delivery aims at providing a desired effect to its health status."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "joint"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000008",
+      "lbl" : "healthcare organization",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An organisation that bears a healthcare organisation role."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "joint"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000009",
+      "lbl" : "healthcare provider",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A health provider who is a member of a healthcare organisation."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "joint"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000011",
+      "lbl" : "healthcare organization service delivery",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A service delivery under the responsibility of a healthcare organisation. It stems from an agreement between a requesting agent and a healthcare organization."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "joint"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000012",
+      "lbl" : "healthcare organization clinical visit",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A healthcare organisation service delivery that aims at providing a desired effect on the health status of a specified organism. It is usually composed of health procedures and possibly associated ancillary processes."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "joint"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000017",
+      "lbl" : "healthcare organization clinical encounter",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A temporally-connected healthcare organization clinical visit that aims to improve, maintain or restore the health of some participating organism. It may have several healthcare organization clinical visits as components."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "interest"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000031",
+      "lbl" : "hospitalization",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An inpatient visit located in a hospital facility requested by a physician, where the healthcare organization can offer an extension overnight."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "interest"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000032",
+      "lbl" : "emergency department visit",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A healthcare organisation clinical visit where there is expectation of providing unplanned, timely, urgent care, including handling life-threatening conditions.\nIt is not necessarily an immediate inpatient subsequent visit."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "interest"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000055",
+      "lbl" : "healthcare organization service delivery beginning statement",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A process beginning statement that temporally qualifies the beginning of a healthcare organisation service delivery."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "joint"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "A process beginning statement that temporally qualifies the beginning of a healthcare organisation service delivery."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000056",
+      "lbl" : "healthcare organization service delivery ending statement",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A process ending statement that temporally qualifies the ending of a healthcare organisation service delivery."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "joint"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "A process ending statement that temporally qualifies the ending of a healthcare organisation service delivery."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000072",
+      "lbl" : "ED by ambulance initiated hospitalization",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An hospitalization for a given patient that was participating in an ambulance initiated emergency departement visit."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "interest"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000074",
+      "lbl" : "clinical visit agreement directive entity",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A service agreement directive entity that directs a clinical visit admission."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "joint"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000078",
+      "lbl" : "hospitalization admitting physician specification",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A clinical visit agreement directive entity mandating the admitting physician."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "joint"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000079",
+      "lbl" : "healthcare physician service",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A healthcare organization with a mandate to manage and coordinate healthcare procedures deliveries under the responsability of its members"
+        },
+        "comments" : [ "It is often a sub-organization of a department. Ex: General internal medicine service is under the medicine department.", "It is often based on the specialty of its members (e.g. respirology), but not always (e.g. vascular service, which may include general internal medicine physician as well as vascular surgeon)." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "joint"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000080",
+      "lbl" : "living environment type prior to clinical visit statement",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A primary residence statement that states the type of living environment of a patient immediately prior to a clinical visit."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "joint"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000084",
+      "lbl" : "healthcare physician service identifier",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A healthcare organization identifier that denotes a physician service."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "joint"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000085",
+      "lbl" : "hospitalization starting with ICU stay",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An hospitalization for a given patient that starts with a stay in an intensive care unit."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "interest"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000100",
+      "lbl" : "healthcare organization service delivery identifier",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An identifier that denotes a healthcare organization service delivery."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "interest"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "An identifier that denotes a healthcare organization service delivery."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000102",
+      "lbl" : "healthcare organization service delivery beginning temporal information",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A temporal information that is a component of a healthcare organization service delivery beginning statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the beginning of healthcare organization service delivery."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "joint"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "A temporal information that is a component of a healthcare organization service delivery beginning statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the beginning of healthcare organization service delivery."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000103",
+      "lbl" : "healthcare organization service delivery ending temporal information",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A temporal information that is a component of a healthcare organization service delivery ending statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the ending of healthcare organization service delivery."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "joint"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "A temporal information that is a component of a healthcare organization service delivery ending statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the ending of healthcare organization service delivery."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000124",
+      "lbl" : "healthcare organization clinical visit pathological condition impact statement",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A pragmatically accepted statement that states the impact of a pathological condition on a clinical visit."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "joint"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "A pragmatically accepted statement that states the impact of a pathological condition on a clinical visit."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000126",
+      "lbl" : "pathological condition impact type on clinical visit",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An information content entity that describes the type of impact of a pathological condition on a clinical visit."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "'primary diagnosis' or 'secondary diagnosis' associated with a diagnosis code."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "joint"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "An information content entity that describes the type of impact of a pathological condition on a clinical visit."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000137",
+      "lbl" : "human clinical visit specified patient",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "joint"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000138",
+      "lbl" : "healthcare provider identifier",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An identifier that denotes a healthcare provider."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "joint"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000150",
+      "lbl" : "human age at beginning of the healthcare organization service delivery",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A human age at a specified temporal region where the temporal region is denoted by a healthcare organization service delivery beginning temporal information, and expressed according to ISO8601 standard."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "joint"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000151",
+      "lbl" : "human age at the beginning of the healthcare organization service delivery statement",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A human age at a specified temporal region statement that includes an human identifier, a healthcare organization service delivery identifier, and the human age at beginning of the healthcare organization service delivery of the human denoted by the human identifier, for the healthcare organization service delivery identified by the healthcare organization service delivery identifier."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "interest"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000152",
+      "lbl" : "human age at the beginning of the clinical visit statement",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "interest"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IOIO_0000001",
+      "lbl" : "human birth statement",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A process temporally qualifying statement about the birth of a human including an identifier and a temporal information of the birth of this human."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "Connor, John, born on 28/2/1985\n\nConnor, John, born on 28/2/1985, son of Connor, Sarah born on 13/11/1965"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "joint"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000061",
+          "val" : "A process temporally qualifying statement about the birth of a human including an identifier and a temporal information of the birth of this human."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IOIO_0000003",
+      "lbl" : "human death statement",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A process temporally qualifying statement about the death of a human including an identifier and a temporal information of the death of this human."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "Reese, Kyle died in 1984"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "joint"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000061",
+          "val" : "A process temporally qualifying statement about the death of a human including an identifier and a temporal information of the death of this human."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IOIO_0000005",
+      "lbl" : "human birth temporal information",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A temporal information that is a component of a human birth statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the birth of this human."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "joint"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "A temporal information that is a component of a human birth statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the birth of this human."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IOIO_0000006",
+      "lbl" : "human death temporal information",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A temporal information that is a component of a human death statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the death of this human."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "joint"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "A temporal information that is a component of a human death statement that states that the temporal region denoted by this temporal information overlaps with the temporal region occupied by the death of this human."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IOIO_0000011",
+      "lbl" : "human biological sex information content entity",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A biological sex information content entity that denotes the biological sex of a human."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "joint"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "A biological sex information content entity that denotes the biological sex of a human."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IOIO_0000014",
+      "lbl" : "human identifier",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An organism identifier that denotes a particular human."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "interest"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "An organism identifier that denotes a particular human."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IOIO_0000015",
+      "lbl" : "human biological sex statement",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A pragmatically accepted statement stating the biological sex of a human."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "joint"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "A pragmatically accepted statement stating the biological sex of a human."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IOIO_0000023",
+      "lbl" : "living environment type",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An information content entity that aims at representing a type of living environment applicable to a primary residence."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "joint"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IOIO_0000031",
+      "lbl" : "human age at a specified temporal region statement",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A  statement that includes an human identifier and the human age at a specified temporal region of the human denoted by the human identifier."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "joint"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MPHPO_0000001",
+      "lbl" : "MPHPO pathological condition impact type on clinical visit ",
+      "type" : "CLASS",
+      "meta" : {
+        "comments" : [ "Parent class with data property." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "interest"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MPHPO_0000003",
+      "lbl" : "MPHPO HOSD beginning temporal information",
+      "type" : "CLASS",
+      "meta" : {
+        "comments" : [ "Parent class with data property." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "interest"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MPHPO_0000004",
+      "lbl" : "MPHPO HOSD ending temporal information ",
+      "type" : "CLASS",
+      "meta" : {
+        "comments" : [ "Parent class with data property." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "interest"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MPHPO_0000005",
+      "lbl" : "MPHPO living environment type ",
+      "type" : "CLASS",
+      "meta" : {
+        "comments" : [ "Parent class with data property." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "interest"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MPHPO_0000006",
+      "lbl" : "MPHPO healthcare physician service identifier ",
+      "type" : "CLASS",
+      "meta" : {
+        "comments" : [ "Parent class with data property." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "interest"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MPHPO_0000007",
+      "lbl" : "MPHPO hospitalization admission urgency level specification ",
+      "type" : "CLASS",
+      "meta" : {
+        "comments" : [ "Parent class with data property." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "interest"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MPHPO_0000009",
+      "lbl" : "MPHPO human birth date",
+      "type" : "CLASS",
+      "meta" : {
+        "comments" : [ "Parent class with data property." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "interest"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MPHPO_0000010",
+      "lbl" : "MPHPO human biological sex information content entity",
+      "type" : "CLASS",
+      "meta" : {
+        "comments" : [ "Parent class with data property." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "interest"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MPHPO_0000011",
+      "lbl" : "MPHPO human death date",
+      "type" : "CLASS",
+      "meta" : {
+        "comments" : [ "Parent class with data property." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "interest"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MPHPO_0000015",
+      "lbl" : "MPHPO human age at beginning of the HCOS",
+      "type" : "CLASS",
+      "meta" : {
+        "comments" : [ "Parent class with a data property" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "interest"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MPHPO_0000016",
+      "lbl" : "MPHPO coded pathological condition sub-group name",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "interest"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MPHPO_0000017",
+      "lbl" : "MPHPO free-text pathological condition sub-group name",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "interest"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MPHPO_0000018",
+      "lbl" : "MPHPO centrally registered identifier symbol",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "interest"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MPHPO_0000019",
+      "lbl" : "MPHPO centrally registered identifier registry",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "interest"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MPHPO_0000020",
+      "lbl" : "MPHPO centrally registered identifier version",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "interest"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MPHPO_0000021",
+      "lbl" : "MPHPO centrally registered identifier label",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "interest"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_9606",
+      "lbl" : "Homo sapiens",
+      "type" : "CLASS",
+      "meta" : {
+        "subsets" : [ "http://purl.obolibrary.org/obo/OpenLHS-Core#OpenLHS-H" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "Homo sapiens"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "human"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "human being"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/ncbitaxon.owl"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+          "val" : "joint"
+        } ]
+      }
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "lbl" : "has part",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "a core relation that holds between a whole and its part"
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension", "http://purl.obolibrary.org/obo/valid_for_go_ontology", "http://purl.obolibrary.org/obo/valid_for_gocam" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "has part"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "my body has part my brain (continuant parthood, two material entities)"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "my stomach has part my stomach cavity (continuant parthood, material entity has part immaterial entity)"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "this year has part this day (occurrent parthood)"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "Everything has itself as a part. Any part of any part of a thing is itself part of that thing. Two distinct things cannot have each other as a part."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "Parthood requires the part and the whole to have compatible classes: only an occurrent have an occurrent as part; only a process can have a process as part; only a continuant can have a continuant as part; only an independent continuant can have an independent continuant as part; only a specifically dependent continuant can have a specifically dependent continuant as part; only a generically dependent continuant can have a generically dependent continuant as part. (This list is not exhaustive.)\n\nA continuant cannot have an occurrent as part: use 'participates in'. An occurrent cannot have a continuant as part: use 'has participant'. An immaterial entity cannot have a material entity as part: use 'location of'. An independent continuant cannot have a specifically dependent continuant as part: use 'bearer of'. A specifically dependent continuant cannot have an independent continuant as part: use 'inheres in'."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "has_part"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/RO_0001900",
+          "val" : "http://purl.obolibrary.org/obo/RO_0001901"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000054",
+      "lbl" : "realized in",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "comments" : [ "Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "realized in"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "this disease is realized in this disease course"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "this fragility is realized in this shattering"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "this investigator role is realized in this investigation"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "is realized by"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "realized_in"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000600",
+          "val" : "[copied from inverse property 'realizes'] to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/bfo.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/BFO_0000055",
+      "lbl" : "realizes",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "comments" : [ "Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "realizes"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "this disease course realizes this disease"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "this investigation realizes this investigator role"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "this shattering realizes this fragility"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000600",
+          "val" : "to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000001",
+      "lbl" : "has participating performer",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "TBD"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000002",
+      "lbl" : "has participating recipient",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "TBD"
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/HOSO_0000087",
+      "lbl" : "participates as recipient",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000136",
+      "lbl" : "is about",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "A (currently) primitive relation that relates an information artifact to an entity."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "This document is about information artifacts and their representations"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000125"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "7/6/2009 Alan Ruttenberg. Following discussion with Jonathan Rees, and introduction of \"mentions\" relation. Weaken the is_about relationship to be primitive. \n\nWe will try to build it back up by elaborating the various subproperties that are more precisely defined.\n\nSome currently missing phenomena that should be considered \"about\" are predications - \"The only person who knows the answer is sitting beside me\" , Allegory, Satire, and other literary forms that can be topical without explicitly mentioning the topic."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "person:Alan Ruttenberg"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "Smith, Ceusters, Ruttenberg, 2000 years of philosophy"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000219",
+      "lbl" : "denotes",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "A primitive, instance-level, relation obtaining between an information content entity and some portion of reality. Denotation is what happens when someone creates an information content entity E in order to specifically refer to something. The only relation between E and the thing is that E can be used to 'pick out' the thing. This relation connects those two together. Freedictionary.com sense 3: To signify directly; refer to specifically"
+        },
+        "comments" : [ "" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "A person's name denotes the person. A variable name in a computer program denotes some piece of memory. Lexically equivalent strings can denote different things, for instance \"Alan\" can denote different people. In each case of use, there is a case of the denotation relation obtaining, between \"Alan\" and the person that is being named."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "2009-11-10 Alan Ruttenberg. Old definition said the following to emphasize the generic nature of this relation. We no longer have 'specifically denotes', which would have been primitive, so make this relation primitive.\ng denotes r =def \nr is a portion of reality\nthere is some c that is a concretization of g \nevery c that is a concretization of g specifically denotes r"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "person:Alan Ruttenberg"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "Conversations with Barry Smith, Werner Ceusters, Bjoern Peters, Michel Dumontier, Melanie Courtot, James Malone, Bill Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000235",
+      "lbl" : "denoted by",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "inverse of the relation 'denotes'"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Person: Jie Zheng, Chris Stoeckert, Mike Conlon"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000233",
+          "val" : "https://github.com/information-artifact-ontology/IAO/issues/206"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OBI_0000299",
+      "lbl" : "has_specified_output",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "The inverse property of is_specified_output_of"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "has_specified_output"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "has_specified_output"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000122"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON: Alan Ruttenberg"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON: Bjoern Peters"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON: Larry Hunter"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "PERSON: Melanie Courtot"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
+          "val" : "http://purl.obolibrary.org/obo/obi.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000004",
+      "lbl" : "is directed by",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "The inverse relations of directs"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "The inverse relations of directs"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000070",
+      "lbl" : "component of",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "The inverse relation of has component."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "The inverse relation of has component."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0000087",
+      "lbl" : "has role",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence"
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "this person has role this investigator role (more colloquially: this person has this role of investigator)"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "A bearer can have many roles, and its roles can exist for different periods of time, but none of its roles can exist when the bearer does not exist. A role need not be realized at all the times that the role exists."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "has_role"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002018",
+      "lbl" : "has component process",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "w 'has process component' p if p and w are processes,  w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "dos"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2017-05-24T09:49:21Z"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002087",
+      "lbl" : "immediately preceded by",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "comments" : [ "X immediately_preceded_by Y iff: end(X) simultaneous_with start(Y)" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "David Osumi-Sutherland"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "starts_at_end_of"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002090",
+      "lbl" : "immediately precedes",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "comments" : [ "X immediately_precedes_Y iff: end(X) simultaneous_with start(Y)" ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "https://orcid.org/0000-0002-7073-9172"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "David Osumi-Sutherland"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "ends_at_start_of"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "meets"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/RO_0002575",
+          "val" : "http://purl.obolibrary.org/obo/BFO_0000063"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "lbl" : "has component",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "w 'has component' p if w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000125"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "The definition of 'has component' is still under discussion. The challenge is in providing a definition that does not imply transitivity."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
+          "val" : "For use in recording has_part with a cardinality constraint, because OWL does not permit cardinality constraints to be used in combination with transitive object properties. In situations where you would want to say something like 'has part exactly 5 digit, you would instead use has_component exactly 5 digit."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/RO_0001900",
+          "val" : "http://purl.obolibrary.org/obo/RO_0001901"
+        }, {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+          "val" : "http://ontologydesignpatterns.org/wiki/Submissions:Componency"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002350",
+      "lbl" : "member of",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "is member of is a mereological relation between a item and a collection."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "An organism that is a member of a population of organisms"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "is member of"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "member part of"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "SIO"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/RO_0001900",
+          "val" : "http://purl.obolibrary.org/obo/RO_0001901"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002479",
+      "lbl" : "has part that occurs in",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
+      "meta" : {
+        "definition" : {
+          "val" : "p has part that occurs in c if and only if there exists some p1, such that p has_part p1, and p1 occurs in c."
+        },
+        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "https://orcid.org/0000-0002-6601-2165"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000002",
+      "lbl" : "has textual value",
+      "type" : "PROPERTY",
+      "propertyType" : "DATA"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000003",
+      "lbl" : "has numerical value",
+      "type" : "PROPERTY",
+      "propertyType" : "DATA"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000004",
+      "lbl" : "has temporal value",
+      "type" : "PROPERTY",
+      "propertyType" : "DATA"
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/coded_patho_subgrp_nm",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/crid_registry",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_SUDD_value",
+          "val" : "crid_registry_val"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_data_property",
+          "val" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000002"
+        } ]
+      }
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/crid_symbol",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_SUDD_value",
+          "val" : "crid_symbol_val"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_data_property",
+          "val" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000002"
+        } ]
+      }
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/crid_version",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_SUDD_value",
+          "val" : "crid_version_val"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_data_property",
+          "val" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000002"
+        } ]
+      }
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/ed_amb_hospit",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/ed_cv",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/ftxt_patho_subgrp_nm",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_SUDD_value",
+          "val" : "ftxt_patho_subgrp_nm_val"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_data_property",
+          "val" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000002"
+        } ]
+      }
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/ftxt_patho_subgrp_nm_index",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_SUDD_value",
+          "val" : "ftxt_patho_subgrp_nm_index_val"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_data_property",
+          "val" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000002"
+        } ]
+      }
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hc_org",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hc_phys_serv",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hc_phys_serv_identifier",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_SUDD_value",
+          "val" : "hc_phys_serv_identifier_val"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_data_property",
+          "val" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000002"
+        } ]
+      }
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hc_prov",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hc_prov_identifier",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hc_serv_org_spec",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcocv",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcocv_patho_imp_stat",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcocv_patho_imp_stat_index",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcosd_begin_stat",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcosd_begin_temp_info",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_SUDD_value",
+          "val" : "hcosd_begin_temp_info_val"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_data_property",
+          "val" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000004"
+        } ]
+      }
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcosd_end_stat",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcosd_end_temp_info",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_SUDD_value",
+          "val" : "hcosd_begin_temp_info_val"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_data_property",
+          "val" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000004"
+        } ]
+      }
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcosd_identifier_compo",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcosd_identifier_compo_index",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcosd_identifier_simple",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_SUDD_value",
+          "val" : "hcosd_identifier_simple_val"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_data_property",
+          "val" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000002"
+        } ]
+      }
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hospit",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hospit_adm_phys_spec",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hospit_adm_urg_lvl_spec",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_SUDD_value",
+          "val" : "hospit_adm_urg_lvl_spec_val"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_data_property",
+          "val" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000002"
+        } ]
+      }
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hospit_index",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/is_UA",
+          "val" : "1"
+        } ]
+      }
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hum_bio_sex_ice",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_SUDD_value",
+          "val" : "hum_bio_sex_ice_val"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_data_property",
+          "val" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000002"
+        } ]
+      }
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hum_bio_sex_stat",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hum_birth_date",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_SUDD_value",
+          "val" : "hum_birth_date_val"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_data_property",
+          "val" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000004"
+        } ]
+      }
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hum_birth_stat",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hum_cv_pat",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hum_identifier_compo",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hum_identifier_simple",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_SUDD_value",
+          "val" : "hum_identifier_simple_val"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_data_property",
+          "val" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000002"
+        } ]
+      }
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/icu_start_hospit",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/liv_env_pre_cv_stat",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/liv_env_type",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_SUDD_value",
+          "val" : "liv_env_type_val"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_data_property",
+          "val" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000002"
+        } ]
+      }
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/patho_imp_type_cv",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_SUDD_value",
+          "val" : "patho_imp_type_cv_val"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_data_property",
+          "val" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000002"
+        } ]
+      }
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/patho_imp_type_cv_index",
+      "type" : "INDIVIDUAL",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_SUDD_value",
+          "val" : "patho_imp_type_cv_index_val"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_data_property",
+          "val" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000002"
+        } ]
+      }
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/patho_subgrp_nm",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/patho_subgrp_nm_index",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_inverse",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_SUDD_value",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_data_property",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://griis.ca/UDD/RIDDLE/2025-09-11/is_UA",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000111",
+      "lbl" : "editor preferred term",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000112",
+      "lbl" : "example of usage",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000114",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000115",
+      "lbl" : "definition",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000116",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000117",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000118",
+      "lbl" : "alternative term",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000119",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000232",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000233",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000412",
+      "lbl" : "imported from",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+          "val" : "http://purl.obolibrary.org/obo/iao.owl"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000600",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000005",
+      "lbl" : "ontorel specification",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "definition" : {
+          "val" : "An annotation property used to tag relevant classes for ontorel generation."
+        },
+        "comments" : [ "Three values for this annotation (WIP) :\n - interest: means that the annotated class instances or associated data properties are of interest for a request.\n - joint: means that the annotated clas or property is necessary for a jointure in the request.\n - pivot: means that the annotated class is the pivot of the request." ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000061",
+      "lbl" : "definitional necessary conditions",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "definition" : {
+          "val" : "Necessary condition that is definitional, that is the notion to be defined does not appear in the condition."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "Necessary condition that is definitional, that is the notion to be defined does not appear in the condition."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+      "lbl" : "definitional necessary and sufficient conditions",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "definition" : {
+          "val" : "A necessary and sufficient condition that is definitional, that is the notion to be defined does not appear in the condition."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000062",
+          "val" : "A necessary and sufficient condition that is definitional, that is the notion to be defined does not appear in the condition."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0001900",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0002575",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/contributor",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/creator",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/source",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/description",
+      "lbl" : "description",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/license",
+      "lbl" : "license",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/title",
+      "lbl" : "title",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#inSubset",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000001",
+      "lbl" : "ISO8601DateTime"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/Ontorel-Core_0000006",
+      "lbl" : "ISO8601Duration"
+    } ],
+    "edges" : [ {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000018",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000017"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HEPRO_0000019",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000017"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000009",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002350",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000008"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000012",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000011"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000012",
+      "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000004",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000074"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000017",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000012"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000017",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002018",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000012"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000031",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000012"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000032",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000012"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000055",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000100"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000055",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000102"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000056",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000100"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000056",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000103"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000072",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000031"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000078",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000074"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000078",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000138"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000079",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000008"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000079",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002350",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000008"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000080",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000100"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000080",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/IOIO_0000023"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000085",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000031"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000100",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000219",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000011"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000102",
+      "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000070",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000055"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000103",
+      "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000070",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000056"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000124",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000017"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000124",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000100"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000124",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000126"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000137",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000137",
+      "pred" : "http://purl.obolibrary.org/obo/HOSO_0000087",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000012"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000137",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000235",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000003"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000138",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000219",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000009"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000151",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IOIO_0000031"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000151",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000100"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000151",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000150"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000152",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000151"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000152",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000137"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IOIO_0000001",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/IOIO_0000005"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IOIO_0000001",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/IOIO_0000014"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IOIO_0000003",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/IOIO_0000006"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IOIO_0000003",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/IOIO_0000014"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IOIO_0000005",
+      "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000070",
+      "obj" : "http://purl.obolibrary.org/obo/IOIO_0000001"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IOIO_0000006",
+      "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000070",
+      "obj" : "http://purl.obolibrary.org/obo/IOIO_0000003"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IOIO_0000014",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000219",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IOIO_0000015",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/IOIO_0000011"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IOIO_0000015",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/IOIO_0000014"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IOIO_0000031",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "obj" : "http://purl.obolibrary.org/obo/IOIO_0000014"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/MPHPO_0000001",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000126"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/MPHPO_0000003",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000102"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/MPHPO_0000004",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000103"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/MPHPO_0000005",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IOIO_0000023"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/MPHPO_0000006",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000084"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/MPHPO_0000007",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000074"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/MPHPO_0000009",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IOIO_0000005"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/MPHPO_0000010",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IOIO_0000011"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/MPHPO_0000011",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IOIO_0000006"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/MPHPO_0000015",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000150"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/MPHPO_0000016",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000019"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/MPHPO_0000017",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000018"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/MPHPO_0000018",
+      "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000070",
+      "obj" : "http://purl.obolibrary.org/obo/MPHPO_0000016"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/MPHPO_0000019",
+      "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000070",
+      "obj" : "http://purl.obolibrary.org/obo/MPHPO_0000016"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/MPHPO_0000020",
+      "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000070",
+      "obj" : "http://purl.obolibrary.org/obo/MPHPO_0000016"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/MPHPO_0000021",
+      "pred" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000070",
+      "obj" : "http://purl.obolibrary.org/obo/MPHPO_0000016"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/coded_patho_subgrp_nm",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/MPHPO_0000016"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/crid_registry",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/MPHPO_0000019"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/crid_symbol",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/MPHPO_0000018"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/crid_version",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/MPHPO_0000020"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/ed_amb_hospit",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000072"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/ed_cv",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000032"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/ftxt_patho_subgrp_nm",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/MPHPO_0000017"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/ftxt_patho_subgrp_nm_index",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/MPHPO_0000017"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hc_org",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000008"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hc_phys_serv",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000079"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hc_phys_serv_identifier",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/MPHPO_0000006"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hc_prov",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000009"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hc_prov_identifier",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000138"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hc_serv_org_spec",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000003"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcocv",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000012"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcocv_patho_imp_stat",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000124"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcocv_patho_imp_stat_index",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000124"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcosd_begin_stat",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000055"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcosd_begin_temp_info",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/MPHPO_0000003"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcosd_end_stat",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000056"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcosd_end_temp_info",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/MPHPO_0000004"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcosd_identifier_compo",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000100"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcosd_identifier_compo_index",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000100"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcosd_identifier_simple",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000100"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hospit",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000031"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hospit_adm_phys_spec",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000078"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hospit_adm_urg_lvl_spec",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/MPHPO_0000007"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hospit_index",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000031"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hum_bio_sex_ice",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/MPHPO_0000010"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hum_bio_sex_stat",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/IOIO_0000015"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hum_birth_date",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/MPHPO_0000009"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hum_birth_stat",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/IOIO_0000001"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hum_cv_pat",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000137"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hum_identifier_compo",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/IOIO_0000014"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hum_identifier_simple",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/IOIO_0000014"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/icu_start_hospit",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000085"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/liv_env_pre_cv_stat",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000080"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/liv_env_type",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/MPHPO_0000005"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/patho_imp_type_cv",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/MPHPO_0000001"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/patho_imp_type_cv_index",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/MPHPO_0000001"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/patho_subgrp_nm",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000017"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/patho_subgrp_nm_index",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/HEPRO_0000017"
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/coded_patho_subgrp_nm",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/crid_registry",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000070"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_inverse",
+          "val" : "true"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "1"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/coded_patho_subgrp_nm",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/crid_symbol",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000070"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_inverse",
+          "val" : "true"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "1"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/coded_patho_subgrp_nm",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/crid_version",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000070"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_inverse",
+          "val" : "true"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "1"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hc_org",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hc_phys_serv",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_inverse",
+          "val" : "true"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "0"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hc_phys_serv",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hc_phys_serv_identifier",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000219"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_inverse",
+          "val" : "true"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "1"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hc_prov",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hc_org",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://purl.obolibrary.org/obo/RO_0002350"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "1"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hc_prov_identifier",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hc_prov",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000219"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "1"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hc_serv_org_spec",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hum_cv_pat",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000235"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_inverse",
+          "val" : "true"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "1"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcocv",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/ed_cv",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_inverse",
+          "val" : "true"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "0"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcocv",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcosd_identifier_compo",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000219"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_inverse",
+          "val" : "true"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "1"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcocv",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcosd_identifier_simple",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000219"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_inverse",
+          "val" : "true"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "1"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcocv",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hospit",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_inverse",
+          "val" : "true"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "0"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcocv_patho_imp_stat",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/patho_imp_type_cv",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://purl.obolibrary.org/obo/RO_0002180"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "1"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcocv_patho_imp_stat",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/patho_subgrp_nm",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://purl.obolibrary.org/obo/RO_0002180"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "1"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcocv_patho_imp_stat_index",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/patho_imp_type_cv_index",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://purl.obolibrary.org/obo/RO_0002180"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "1"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcocv_patho_imp_stat_index",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/patho_subgrp_nm_index",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://purl.obolibrary.org/obo/RO_0002180"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "1"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcosd_begin_stat",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcosd_begin_temp_info",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000070"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_inverse",
+          "val" : "true"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "1"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcosd_end_stat",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcosd_end_temp_info",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000070"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_inverse",
+          "val" : "true"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "1"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcosd_identifier_compo",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcocv_patho_imp_stat",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://purl.obolibrary.org/obo/RO_0002180"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_inverse",
+          "val" : "true"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "0"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcosd_identifier_compo",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcosd_begin_stat",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://purl.obolibrary.org/obo/RO_0002180"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_inverse",
+          "val" : "true"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "1"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcosd_identifier_compo",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcosd_end_stat",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://purl.obolibrary.org/obo/RO_0002180"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_inverse",
+          "val" : "true"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "0"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcosd_identifier_compo_index",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcocv_patho_imp_stat_index",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://purl.obolibrary.org/obo/RO_0002180"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_inverse",
+          "val" : "true"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "1"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcosd_identifier_compo_index",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/liv_env_pre_cv_stat",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://purl.obolibrary.org/obo/RO_0002180"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_inverse",
+          "val" : "true"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "1"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcosd_identifier_simple",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000219",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcocv",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "1"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hospit_adm_phys_spec",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hc_prov_identifier",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://purl.obolibrary.org/obo/RO_0002180"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "1"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hospit_index",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/ed_amb_hospit",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_inverse",
+          "val" : "true"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "0"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hospit_index",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hc_serv_org_spec",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000004"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "1"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hospit_index",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcosd_identifier_compo_index",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000219"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_inverse",
+          "val" : "true"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "1"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hospit_index",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hospit_adm_phys_spec",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000004"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "1"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hospit_index",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hospit_adm_urg_lvl_spec",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000004"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "1"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hospit_index",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/icu_start_hospit",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_inverse",
+          "val" : "true"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "0"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hum_bio_sex_stat",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hum_bio_sex_ice",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://purl.obolibrary.org/obo/RO_0002180"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "1"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hum_birth_stat",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hum_birth_date",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://purl.obolibrary.org/obo/RO_0002180"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "1"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hum_cv_pat",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hcocv",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://purl.obolibrary.org/obo/HOSO_0000087"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "1"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hum_cv_pat",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hum_identifier_compo",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000235"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "1"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hum_cv_pat",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hum_identifier_simple",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000219"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_inverse",
+          "val" : "true"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "1"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hum_identifier_compo",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hum_bio_sex_stat",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://purl.obolibrary.org/obo/RO_0002180"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_inverse",
+          "val" : "true"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "1"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hum_identifier_compo",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/hum_birth_stat",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://purl.obolibrary.org/obo/RO_0002180"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_inverse",
+          "val" : "true"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "1"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/liv_env_pre_cv_stat",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/liv_env_type",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://purl.obolibrary.org/obo/RO_0002180"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "1"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/patho_subgrp_nm",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/coded_patho_subgrp_nm",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_inverse",
+          "val" : "true"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "0"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/patho_subgrp_nm",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/ftxt_patho_subgrp_nm",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_inverse",
+          "val" : "true"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "0"
+        } ]
+      }
+    }, {
+      "sub" : "http://griis.ca/UDD/RIDDLE/2025-09-11/patho_subgrp_nm_index",
+      "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child",
+      "obj" : "http://griis.ca/UDD/RIDDLE/2025-09-11/ftxt_patho_subgrp_nm_index",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_IRI",
+          "val" : "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/UDD_hierarchy_inverse",
+          "val" : "true"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_max",
+          "val" : "1"
+        }, {
+          "pred" : "http://griis.ca/UDD/RIDDLE/2025-09-11/cardinality_min",
+          "val" : "1"
+        } ]
+      }
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000219",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000136"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002018",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002180"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002180",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000051"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/BFO_0000054",
+      "pred" : "inverseOf",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000055"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/HOSO_0000002",
+      "pred" : "inverseOf",
+      "obj" : "http://purl.obolibrary.org/obo/HOSO_0000087"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0000219",
+      "pred" : "inverseOf",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000235"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OpenLHS-Core_0000070",
+      "pred" : "inverseOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002180"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/RO_0002087",
+      "pred" : "inverseOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0002090"
+    } ],
+    "logicalDefinitionAxioms" : [ {
+      "definedClassId" : "http://purl.obolibrary.org/obo/HOSO_0000137",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/NCBITaxon_9606" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/IAO_0000235",
+        "fillerId" : "http://purl.obolibrary.org/obo/HOSO_0000003"
+      } ]
+    } ]
+  } ]
+}

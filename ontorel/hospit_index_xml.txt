@@ -1,0 +1,53 @@
+    <!-- http://griis.ca/UDD/RIDDLE/2025-09-11/hospit_index -->
+
+    <owl:NamedIndividual rdf:about="http://griis.ca/UDD/RIDDLE/2025-09-11/hospit_index">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/HOSO_0000031"/>
+        <RIDDLE:has_UDD_child rdf:resource="http://griis.ca/UDD/RIDDLE/2025-09-11/ed_amb_hospit"/>
+        <RIDDLE:has_UDD_child rdf:resource="http://griis.ca/UDD/RIDDLE/2025-09-11/hc_serv_org_spec"/>
+        <RIDDLE:has_UDD_child rdf:resource="http://griis.ca/UDD/RIDDLE/2025-09-11/hospit_adm_phys_spec"/>
+        <RIDDLE:has_UDD_child rdf:resource="http://griis.ca/UDD/RIDDLE/2025-09-11/hospit_adm_urg_lvl_spec"/>
+        <RIDDLE:has_UDD_child rdf:resource="http://griis.ca/UDD/RIDDLE/2025-09-11/icu_start_hospit"/>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://griis.ca/UDD/RIDDLE/2025-09-11/hospit_index"/>
+        <owl:annotatedProperty rdf:resource="http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child"/>
+        <owl:annotatedTarget rdf:resource="http://griis.ca/UDD/RIDDLE/2025-09-11/ed_amb_hospit"/>
+        <RIDDLE:UDD_hierarchy_IRI>rdfs:subClassOf</RIDDLE:UDD_hierarchy_IRI>
+        <RIDDLE:UDD_hierarchy_inverse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</RIDDLE:UDD_hierarchy_inverse>
+        <RIDDLE:cardinality_max rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</RIDDLE:cardinality_max>
+        <RIDDLE:cardinality_min rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</RIDDLE:cardinality_min>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://griis.ca/UDD/RIDDLE/2025-09-11/hospit_index"/>
+        <owl:annotatedProperty rdf:resource="http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child"/>
+        <owl:annotatedTarget rdf:resource="http://griis.ca/UDD/RIDDLE/2025-09-11/hc_serv_org_spec"/>
+        <RIDDLE:UDD_hierarchy_IRI>http://purl.obolibrary.org/obo/OpenLHS-Core_0000004</RIDDLE:UDD_hierarchy_IRI>
+        <RIDDLE:cardinality_max rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</RIDDLE:cardinality_max>
+        <RIDDLE:cardinality_min rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</RIDDLE:cardinality_min>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://griis.ca/UDD/RIDDLE/2025-09-11/hospit_index"/>
+        <owl:annotatedProperty rdf:resource="http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child"/>
+        <owl:annotatedTarget rdf:resource="http://griis.ca/UDD/RIDDLE/2025-09-11/hospit_adm_phys_spec"/>
+        <RIDDLE:UDD_hierarchy_IRI>http://purl.obolibrary.org/obo/OpenLHS-Core_0000004</RIDDLE:UDD_hierarchy_IRI>
+        <RIDDLE:cardinality_max rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</RIDDLE:cardinality_max>
+        <RIDDLE:cardinality_min rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</RIDDLE:cardinality_min>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://griis.ca/UDD/RIDDLE/2025-09-11/hospit_index"/>
+        <owl:annotatedProperty rdf:resource="http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child"/>
+        <owl:annotatedTarget rdf:resource="http://griis.ca/UDD/RIDDLE/2025-09-11/hospit_adm_urg_lvl_spec"/>
+        <RIDDLE:UDD_hierarchy_IRI>http://purl.obolibrary.org/obo/OpenLHS-Core_0000004</RIDDLE:UDD_hierarchy_IRI>
+        <RIDDLE:cardinality_max rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</RIDDLE:cardinality_max>
+        <RIDDLE:cardinality_min rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</RIDDLE:cardinality_min>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://griis.ca/UDD/RIDDLE/2025-09-11/hospit_index"/>
+        <owl:annotatedProperty rdf:resource="http://griis.ca/UDD/RIDDLE/2025-09-11/has_UDD_child"/>
+        <owl:annotatedTarget rdf:resource="http://griis.ca/UDD/RIDDLE/2025-09-11/icu_start_hospit"/>
+        <RIDDLE:UDD_hierarchy_IRI>rdfs:subClassOf</RIDDLE:UDD_hierarchy_IRI>
+        <RIDDLE:UDD_hierarchy_inverse rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</RIDDLE:UDD_hierarchy_inverse>
+        <RIDDLE:cardinality_max rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1</RIDDLE:cardinality_max>
+        <RIDDLE:cardinality_min rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</RIDDLE:cardinality_min>
+    </owl:Axiom>
+    
